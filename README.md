@@ -1,3 +1,4 @@
 # Goober-site.github.io
-My website for past, present and future projects.
+This website was made to host all of my projects past, present and future.
+![Goober ground station](Assets/projects/Goober-ground-station/raw_unsync.png)
 (still under development)
