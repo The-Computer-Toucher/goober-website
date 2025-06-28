@@ -1,0 +1,44 @@
+body {
+    text-align: left;
+    font-family: sans-serif;
+    color: black;
+}
+div {
+    text-align: center;
+    font-family: sans-serif;
+    color: black;
+    width: auto;
+    border: 2px solid rgb(19, 85, 146);
+    margin: auto;
+    height: 200px;
+    background-color: lightyellow;
+}
+h1 {
+    color:darkred;
+    text-align: center;
+}
+h2 {
+    color:darkblue;
+    text-align: center;
+}
+:any-link {
+    color: dodgerblue;
+}
+::grammar-error{
+    color: darkcyan;
+}
+::spelling-error{
+    color: red;
+}
+header {
+    background-color: rgb(19, 85, 146);
+    text-align: center;
+    font-family: sans-serif;
+    color: whitesmoke;
+}
+footer {
+    background-color: rgb(19, 85, 146);
+    text-align: center;
+    font-family: sans-serif;
+    color: whitesmoke;
+}
