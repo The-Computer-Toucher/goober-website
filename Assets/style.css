@@ -3,6 +3,7 @@ body {
     font-family: sans-serif;
     color: black;
 }
+
 div {
     text-align: center;
     font-family: sans-serif;
@@ -10,35 +11,85 @@ div {
     width: auto;
     border: 2px solid rgb(19, 85, 146);
     margin: auto;
-    height: 200px;
+    height: auto;
     background-color: lightyellow;
 }
+
 h1 {
     color:darkred;
     text-align: center;
+    font-size: 40px;
 }
+
 h2 {
     color:darkblue;
     text-align: center;
+    font-size: 40px;
 }
+
+h3 {
+    color:darkblue;
+    text-align: left;
+    font-size: 20px;
+}
+
 :any-link {
-    color: dodgerblue;
+    color: rgb(50, 50, 255);
 }
+
 ::grammar-error{
     color: darkcyan;
 }
+
 ::spelling-error{
     color: red;
 }
+
 header {
     background-color: rgb(19, 85, 146);
     text-align: center;
     font-family: sans-serif;
     color: whitesmoke;
+    height: 20px;
+    padding: 1px;
 }
+
 footer {
     background-color: rgb(19, 85, 146);
     text-align: center;
     font-family: sans-serif;
     color: whitesmoke;
+    padding: 10px;
+    font-size: 10px;
+}
+
+table {
+  font-family: sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td {
+  border: 1px solid rgb(19, 85, 146);
+  text-align: center;
+  margin: 2px;
+  padding: 5px;
+}
+
+th {
+  border: 1px solid rgb(19, 85, 146);
+  text-align: center;
+  margin: 2px;
+  padding: 5px;
+  background: lightgray;
+  color:darkslategray;
+}
+
+tr:nth-child(even) {
+  background-color: white;
+}
+
+img {
+    width: auto;
+    height: 80px;
 }
