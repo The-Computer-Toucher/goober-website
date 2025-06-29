@@ -69,6 +69,7 @@ table { /* Used to define the tables on any givin page */
   font-family: sans-serif;
   border-collapse: collapse;
   width: 100%;
+  font-size: 12px;
 }
 
 td { /* Table data (the text or images or any thing that goes in the table) */
@@ -97,11 +98,15 @@ tr:nth-child(even) { /* Defines the... I dont really know what this does, just t
 }
 
 .inactive { /* Just tcahnges the background color of the 'status' collums in the tables (inactive) */
-    color: rgba(150, 50, 50, 0.5);
+    background-color: rgba(150, 50, 50, 0.5);
+}
+
+.marginal { /* Just tcahnges the background color of the 'status' collums in the tables (marginal) */
+    background-color: rgba(150, 150, 50, 0.5)
 }
 
 .paused { /* Just tcahnges the background color of the 'status' collums in the tables (paused) */
-    color: rgba(50, 50, 150, 0.5);
+    background-color: rgba(50, 50, 150, 0.5);
 }
 
 .active { /* Just tcahnges the background color of the 'status' collums in the tables (active) */
