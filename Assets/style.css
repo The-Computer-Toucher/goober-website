@@ -102,7 +102,7 @@ tr:nth-child(even) { /* Defines the... I dont really know what this does, just t
 }
 
 .marginal { /* Just tcahnges the background color of the 'status' collums in the tables (marginal) */
-    background-color: rgba(150, 150, 50, 0.5)
+    background-color: rgba(150, 150, 50, 0.5);
 }
 
 .paused { /* Just tcahnges the background color of the 'status' collums in the tables (paused) */
