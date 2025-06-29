@@ -1,10 +1,12 @@
-body {
+/* Any comments are subject to spelling errors */
+
+body { /* This is changes the 'body' so that it all text in the "<body> </body>" has the same font and is black */
     text-align: left;
     font-family: sans-serif;
     color: black;
 }
 
-div {
+div { /* This is used to make the error boxes as seen on the 404 page, also used for utility links */
     text-align: center;
     font-family: sans-serif;
     color: black;
@@ -15,26 +17,26 @@ div {
     background-color: lightyellow;
 }
 
-h1 {
+h1 { /* Used for error mesages as shown on the 404 page, and its also used for the 'STILL UNDER DEVELOPMENT' text */
     color:darkred;
     text-align: center;
     font-size: 40px;
 }
 
-h2 {
+h2 { /* Used for titles */
     color:darkblue;
     text-align: center;
     font-size: 40px;
 }
 
-h3 {
+h3 { /* Used for sub titles */
     color:darkblue;
     text-align: left;
     font-size: 20px;
 }
 
-:any-link {
-    color: rgb(50, 50, 255);
+:any-link { /* changes the color of any links on the website */
+    color: rgb(100, 100, 255);
 }
 
 ::grammar-error{
@@ -45,7 +47,7 @@ h3 {
     color: red;
 }
 
-header {
+header { /* Used to make the header banner */
     background-color: rgb(19, 85, 146);
     text-align: center;
     font-family: sans-serif;
@@ -54,7 +56,7 @@ header {
     padding: 1px;
 }
 
-footer {
+footer { /* Used to make the footer banner */
     background-color: rgb(19, 85, 146);
     text-align: center;
     font-family: sans-serif;
@@ -63,20 +65,20 @@ footer {
     font-size: 10px;
 }
 
-table {
+table { /* Used to define the tables on any givin page */
   font-family: sans-serif;
   border-collapse: collapse;
   width: 100%;
 }
 
-td {
+td { /* Table data (the text or images or any thing that goes in the table) */
   border: 1px solid rgb(19, 85, 146);
   text-align: center;
   margin: 2px;
   padding: 5px;
 }
 
-th {
+th { /* Table headings (the headings at the top of each collum) */
   border: 1px solid rgb(19, 85, 146);
   text-align: center;
   margin: 2px;
@@ -85,11 +87,23 @@ th {
   color:darkslategray;
 }
 
-tr:nth-child(even) {
+tr:nth-child(even) { /* Defines the... I dont really know what this does, just that its somthing to do with the tables */
   background-color: white;
 }
 
-img {
+.img { /* Defines the size of any images in the tables */
     width: auto;
     height: 80px;
+}
+
+.inactive { /* Just tcahnges the background color of the 'status' collums in the tables (inactive) */
+    color: rgba(150, 50, 50, 0.5);
+}
+
+.paused { /* Just tcahnges the background color of the 'status' collums in the tables (paused) */
+    color: rgba(50, 50, 150, 0.5);
+}
+
+.active { /* Just tcahnges the background color of the 'status' collums in the tables (active) */
+    background-color: rgba(50, 150, 50, 0.5);
 }
