@@ -45,7 +45,7 @@
             <td> NOAA / NASA </td> <!-- Agency -->
             <td> AMSU-A </td> <!-- Intruments -->
             <td class="marginal"> Operational (Degraded) </td> <!-- Intruments Status -->
-            <td> DSB/HRPT/GAC/LAC </td> <!-- Signal Name -->
+            <td> DSB/HRPT/GAC </td> <!-- Signal Name -->
             <td> BPSK </td> <!-- Signal Modulation -->
             <td> 46 kHz/4 MHz/ 4 MHz/ 4 MHz </td> <!-- Signal Bandwidth -->
             <td> 137.350.000 Hz/ 1.702.500.000 Hz/ 2.247.500.000 Hz </td> <!-- Signal Frequencies -->
@@ -66,7 +66,7 @@
               <td> - </td> <!-- Agency -->
               <td> AMSU-B </td> <!-- Intruments -->
               <td class="inactive"> Nonoperational (failure) </td> <!-- Intruments Status -->
-              <td> DSB/HRPT/GAC/LAC </td> <!-- Signal Name -->
+              <td> DSB/HRPT/GAC </td> <!-- Signal Name -->
               <td> BPSK </td> <!-- Signal Modulation -->
               <td> 46 kHz/4 MHz/ 4 MHz/ 4 MHz </td> <!-- Signal Bandwidth -->
               <td> 137.350.000 Hz/ 1.702.500.000 Hz/ 2.247.500.000 Hz </td> <!-- Signal Frequencies -->
@@ -87,7 +87,7 @@
                 <td> - </td> <!-- Agency -->
                 <td> AVHRR/3 </td> <!-- Intruments -->
                 <td class="marginal"> Operational (Degraded) </td> <!-- Intruments Status -->
-                <td> APT/HRPT/GAC/LAC </td> <!-- Signal Name -->
+                <td> APT/HRPT/GAC </td> <!-- Signal Name -->
                 <td> FM-AM/BPSK </td> <!-- Signal Modulation -->
                 <td> 38 kHz/4 MHz/ 4 MHz/ 4 MHz </td> <!-- Signal Bandwidth -->
                 <td> 137.350.000 Hz/ 1.702.500.000 Hz/ 2.247.500.000 Hz </td> <!-- Signal Frequencies -->
@@ -108,7 +108,7 @@
                   <td> - </td> <!-- Agency -->
                   <td> HIRS/3 </td> <!-- Intruments -->
                   <td class="inactive"> Nonoperational (failure) </td> <!-- Intruments Status -->
-                  <td> DSB/HRPT/GAC/LAC </td> <!-- Signal Name -->
+                  <td> DSB/HRPT/GAC </td> <!-- Signal Name -->
                   <td> BPSK </td> <!-- Signal Modulation -->
                   <td> 46 kHz/4 MHz/ 4 MHz/ 4 MHz </td> <!-- Signal Bandwidth -->
                   <td> 1137.350.000 Hz/ 1.702.500.000 Hz/ 2.247.500.000 Hz </td> <!-- Signal Frequencies -->
@@ -116,7 +116,7 @@
                   <td> RHCP </td> <!-- Polarisation -->
                   <td class="inactive"> Nonoperational </td> <!-- Signal Status -->
                   <td> Digital </td> <!-- D/A -->
-                  <td> 18.9-20.3 Km </td> <!-- Image resolution -->
+                  <td> 18 Km </td> <!-- Image resolution -->
                   <td> - </td> <!-- NORAD Id -->
                   <td class="inactive"> No </td> <!-- Received -->
                 </tr>
@@ -213,10 +213,10 @@
                             <td> - </td> <!-- Agency -->
                             <td> SEM/TED </td> <!-- Intruments -->
                             <td class="active"> Operational </td> <!-- Intruments Status -->
-                            <td> DSB/LAC </td> <!-- Signal Name -->
+                            <td> DSB </td> <!-- Signal Name -->
                             <td> BPSK </td> <!-- Signal Modulation -->
                             <td> 46 kHz/ 4 MHz </td> <!-- Signal Bandwidth -->
-                            <td> 137.350.000 Hz/ 1.702.500.000 Hz </td> <!-- Signal Frequencies -->
+                            <td> 137.350.000 Hz </td> <!-- Signal Frequencies -->
                             <td> VHF/L </td> <!-- Band (IEEE) -->
                             <td> RHCP </td> <!-- Polarisation -->
                             <td class="active"> Operational </td> <!-- Signal Status -->
@@ -234,10 +234,10 @@
                               <td> - </td> <!-- Agency -->
                               <td> SEM/MEPED </td> <!-- Intruments -->
                               <td class="active"> Operational </td> <!-- Intruments Status -->
-                              <td> DSB/LAC </td> <!-- Signal Name -->
+                              <td> DSB </td> <!-- Signal Name -->
                               <td> BPSK </td> <!-- Signal Modulation -->
                               <td> 46 kHz/ 4 MHz </td> <!-- Signal Bandwidth -->
-                              <td> 137.350.000 Hz/ 1.702.500.000 Hz </td> <!-- Signal Frequencies -->
+                              <td> 137.350.000 Hz </td> <!-- Signal Frequencies -->
                               <td> VHF/L </td> <!-- Band (IEEE) -->
                               <td> RHCP </td> <!-- Polarisation -->
                               <td class="active"> Operational </td> <!-- Signal Status -->
@@ -330,30 +330,200 @@
           <th> NORAD Id </th>
           <th> Received </th>
         </tr>
-        <tr> 
-          <td> NOAA-18 (NOAA-N) </td> 
-          <td> Polar (Sun-synchronous orbit) </td> 
-          <td> Weather </td> 
-          <td> USA </td> 
-          <td class="active"> Active </td> 
-          <td> NOAA / NASA </td> 
-          <td> AMSU-A </td> 
-          <td class="marginal"> Operational (Degraded) </td> 
-          <td> DSB/HRPT </td> 
-          <td> BPSK </td>
-          <td> 46 kHz/4 MHz </td>
-          <td> 137.350.000 Hz/1.702.500.000 Hz </td>
-          <td> VHF/L </td>
-          <td> RHCP/LHCP </td>
-          <td class="active"> Operational </td>
-          <td> Digital </td>
-          <td> 48 km </td>
-          <td> 25338 </td> 
-          <td class="active"> Yes (DSB) </td>
-        </tr>
+          <tr> 
+            <td> NOAA-18 (NOAA-N) </td> <!-- Satellite -->
+            <td> Polar (Sun-synchronous orbit [Graveyard]) </td> <!-- Orbit Type -->
+            <td> Weather </td> <!-- Type -->
+            <td> USA </td> <!-- Country -->
+            <td class="inactive"> Inactive (Shutdown) </td> <!-- Status -->
+            <td> NOAA / NASA </td> <!-- Agency -->
+            <td> AMSU-A </td> <!-- Intruments -->
+            <td class="paused"> Shutdown </td> <!-- Intruments Status -->
+            <td> DSB/HRPT/GAC </td> <!-- Signal Name -->
+            <td> BPSK </td> <!-- Signal Modulation -->
+            <td> 46 kHz/4 MHz/ 4 MHz/ 4 MHz </td> <!-- Signal Bandwidth -->
+            <td> 137.350.000 Hz/1.707.000.000 Hz/ 2.247.500.000 Hz </td> <!-- Signal Frequencies -->
+            <td> VHF/L/S </td> <!-- Band (IEEE) -->
+            <td> RHCP </td> <!-- Polarisation -->
+            <td class="paused"> Shutdown </td> <!-- Signal Status -->
+            <td> Digital </td> <!-- D/A -->
+            <td> 48 km </td> <!-- Image resolution -->
+            <td> 28654 </td> <!-- NORAD Id -->
+            <td class="active"> Yes (DSB) </td> <!-- Received -->
+          </tr>
+            <tr> 
+              <td> - </td> <!-- Satellite -->
+              <td> - </td> <!-- Orbit Type -->
+              <td> - </td> <!-- Type -->
+              <td> - </td> <!-- Country -->
+              <td class="inactive"> - </td> <!-- Status -->
+              <td> - </td> <!-- Agency -->
+              <td> AVHRR/3 </td> <!-- Intruments -->
+              <td class="paused"> Shutdown </td> <!-- Intruments Status -->
+              <td> APT/HRPT/GAC </td> <!-- Signal Name -->
+              <td> FM-AM/BPSK </td> <!-- Signal Modulation -->
+              <td> 38 kHz/4 MHz/4 MHz/4 MHz </td> <!-- Signal Bandwidth -->
+              <td> 137.912.500 Hz/1.707.000.000 Hz/ 2.247.500.000 Hz </td> <!-- Signal Frequencies -->
+              <td> VHF/L/S </td> <!-- Band (IEEE) -->
+              <td> RHCP </td> <!-- Polarisation -->
+              <td class="paused"> Shutdown </td> <!-- Signal Status -->
+              <td> Analog/Digital </td> <!-- D/A -->
+              <td> 4 Km/1.1 Km </td> <!-- Image resolution -->
+              <td> - </td> <!-- NORAD Id -->
+              <td class="active"> Yes (APT) </td> <!-- Received -->
+            </tr>
+              <tr> 
+                <td> - </td> <!-- Satellite -->
+                <td> - </td> <!-- Orbit Type -->
+                <td> - </td> <!-- Type -->
+                <td> - </td> <!-- Country -->
+                <td class="inactive"> - </td> <!-- Status -->
+                <td> - </td> <!-- Agency -->
+                <td> HIRS/4 </td> <!-- Intruments -->
+                <td class="inactive"> Nonoperational (failure) </td> <!-- Intruments Status -->
+                <td> DSB/HRPT/GAC </td> <!-- Signal Name -->
+                <td> BPSK </td> <!-- Signal Modulation -->
+                <td> 46 kHz/4 MHz/ 4 MHz/ 4 MHz </td> <!-- Signal Bandwidth -->
+                <td> 137.350.000 Hz/1.707.000.000 Hz/ 2.247.500.000 Hz </td> <!-- Signal Frequencies -->
+                <td> VHF/L/S </td> <!-- Band (IEEE) -->
+                <td> RHCP </td> <!-- Polarisation -->
+                <td class="inactive"> Nonoperational </td> <!-- Signal Status -->
+                <td> Digital </td> <!-- D/A -->
+                <td> 10 Km </td> <!-- Image resolution -->
+                <td> - </td> <!-- NORAD Id -->
+                <td class="inactive"> No </td> <!-- Received -->
+              </tr>
+                <tr> 
+                  <td> - </td> <!-- Satellite -->
+                  <td> - </td> <!-- Orbit Type -->
+                  <td> - </td> <!-- Type -->
+                  <td> - </td> <!-- Country -->
+                  <td class="inactive"> - </td> <!-- Status -->
+                  <td> - </td> <!-- Agency -->
+                  <td> MHS </td> <!-- Intruments -->
+                  <td class="inactive"> Nonoperational (failure) </td> <!-- Intruments Status -->
+                  <td> - </td> <!-- Signal Name -->
+                  <td> - </td> <!-- Signal Modulation -->
+                  <td> - </td> <!-- Signal Bandwidth -->
+                  <td> - </td> <!-- Signal Frequencies -->
+                  <td> - </td> <!-- Band (IEEE) -->
+                  <td> - </td> <!-- Polarisation -->
+                  <td class=""> - </td> <!-- Signal Status -->
+                  <td> - </td> <!-- D/A -->
+                  <td> - </td> <!-- Image resolution -->
+                  <td> - </td> <!-- NORAD Id -->
+                  <td class=""> - </td> <!-- Received -->
+                </tr>
+                  <tr> 
+                    <td> - </td> <!-- Satellite -->
+                    <td> - </td> <!-- Orbit Type -->
+                    <td> - </td> <!-- Type -->
+                    <td> - </td> <!-- Country -->
+                    <td class="inactive"> - </td> <!-- Status -->
+                    <td> - </td> <!-- Agency -->
+                    <td> - </td> <!-- Intruments -->
+                    <td class=""> - </td> <!-- Intruments Status -->
+                    <td> - </td> <!-- Signal Name -->
+                    <td> - </td> <!-- Signal Modulation -->
+                    <td> - </td> <!-- Signal Bandwidth -->
+                    <td> - </td> <!-- Signal Frequencies -->
+                    <td> - </td> <!-- Band (IEEE) -->
+                    <td> - </td> <!-- Polarisation -->
+                    <td class=""> - </td> <!-- Signal Status -->
+                    <td> - </td> <!-- D/A -->
+                    <td> - </td> <!-- Image resolution -->
+                    <td> - </td> <!-- NORAD Id -->
+                    <td class=""> - </td> <!-- Received -->
+                  </tr>
+                    <tr> 
+                      <td> - </td> <!-- Satellite -->
+                      <td> - </td> <!-- Orbit Type -->
+                      <td> - </td> <!-- Type -->
+                      <td> - </td> <!-- Country -->
+                      <td class="inactive"> - </td> <!-- Status -->
+                      <td> - </td> <!-- Agency -->
+                      <td> - </td> <!-- Intruments -->
+                      <td class=""> - </td> <!-- Intruments Status -->
+                      <td> - </td> <!-- Signal Name -->
+                      <td> - </td> <!-- Signal Modulation -->
+                      <td> - </td> <!-- Signal Bandwidth -->
+                      <td> - </td> <!-- Signal Frequencies -->
+                      <td> - </td> <!-- Band (IEEE) -->
+                      <td> - </td> <!-- Polarisation -->
+                      <td class=""> - </td> <!-- Signal Status -->
+                      <td> - </td> <!-- D/A -->
+                      <td> - </td> <!-- Image resolution -->
+                      <td> - </td> <!-- NORAD Id -->
+                      <td class=""> - </td> <!-- Received -->
+                    </tr>
+                      <tr> 
+                        <td> - </td> <!-- Satellite -->
+                        <td> - </td> <!-- Orbit Type -->
+                        <td> - </td> <!-- Type -->
+                        <td> - </td> <!-- Country -->
+                        <td class="inactive"> - </td> <!-- Status -->
+                        <td> - </td> <!-- Agency -->
+                        <td> - </td> <!-- Intruments -->
+                        <td class=""> - </td> <!-- Intruments Status -->
+                        <td> - </td> <!-- Signal Name -->
+                        <td> - </td> <!-- Signal Modulation -->
+                        <td> - </td> <!-- Signal Bandwidth -->
+                        <td> - </td> <!-- Signal Frequencies -->
+                        <td> - </td> <!-- Band (IEEE) -->
+                        <td> - </td> <!-- Polarisation -->
+                        <td class=""> - </td> <!-- Signal Status -->
+                        <td> - </td> <!-- D/A -->
+                        <td> - </td> <!-- Image resolution -->
+                        <td> - </td> <!-- NORAD Id -->
+                        <td class=""> - </td> <!-- Received -->
+                      </tr>
+                        <tr> 
+                          <td> - </td> <!-- Satellite -->
+                          <td> - </td> <!-- Orbit Type -->
+                          <td> - </td> <!-- Type -->
+                          <td> - </td> <!-- Country -->
+                          <td class="inactive"> - </td> <!-- Status -->
+                          <td> - </td> <!-- Agency -->
+                          <td> - </td> <!-- Intruments -->
+                          <td class=""> - </td> <!-- Intruments Status -->
+                          <td> - </td> <!-- Signal Name -->
+                          <td> - </td> <!-- Signal Modulation -->
+                          <td> - </td> <!-- Signal Bandwidth -->
+                          <td> - </td> <!-- Signal Frequencies -->
+                          <td> - </td> <!-- Band (IEEE) -->
+                          <td> - </td> <!-- Polarisation -->
+                          <td class=""> - </td> <!-- Signal Status -->
+                          <td> - </td> <!-- D/A -->
+                          <td> - </td> <!-- Image resolution -->
+                          <td> - </td> <!-- NORAD Id -->
+                          <td class=""> - </td> <!-- Received -->
+                        </tr>
+                          <tr> 
+                            <td> - </td> <!-- Satellite -->
+                            <td> - </td> <!-- Orbit Type -->
+                            <td> - </td> <!-- Type -->
+                            <td> - </td> <!-- Country -->
+                            <td class="inactive"> - </td> <!-- Status -->
+                            <td> - </td> <!-- Agency -->
+                            <td> - </td> <!-- Intruments -->
+                            <td class=""> - </td> <!-- Intruments Status -->
+                            <td> - </td> <!-- Signal Name -->
+                            <td> - </td> <!-- Signal Modulation -->
+                            <td> - </td> <!-- Signal Bandwidth -->
+                            <td> - </td> <!-- Signal Frequencies -->
+                            <td> - </td> <!-- Band (IEEE) -->
+                            <td> - </td> <!-- Polarisation -->
+                            <td class=""> - </td> <!-- Signal Status -->
+                            <td> - </td> <!-- D/A -->
+                            <td> - </td> <!-- Image resolution -->
+                            <td> - </td> <!-- NORAD Id -->
+                            <td class=""> - </td> <!-- Received -->
+                          </tr>
       </table>
     https://www.cpc.ncep.noaa.gov/products/stratosphere/strat_a_f/NOAA-K.pdf
     https://space.oscar.wmo.int/satellites/view/noaa_15
+    https://space.oscar.wmo.int/satellites/view/noaa_18
+    https://www.ospo.noaa.gov/operations/poes/status.html
     <h3> References </h3>
     <div> <!-- defines the box that the link is in -->
       <a href="Index.html">Home page</a> <!-- defines the link abck to the home page or 'index' -->
