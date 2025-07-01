@@ -92,9 +92,17 @@ tr:nth-child(even) { /* Defines the... I dont really know what this does, just t
   background-color: white;
 }
 
-.img { /* Defines the size of any images in the tables */
+.img { /* Defines the color of the tables yes or no columns to 'Yes' */
     width: auto;
     height: 80px;
+}
+
+.Yes { /* Defines the color of the tables yes or no columns to 'No' */
+    background-color: rgba(50, 150, 50, 0.5);
+}
+
+.No { /* Defines the color of the project table on the 'Index.html' page to 'Yes' */
+    background-color: rgba(150, 50, 50, 0.5);
 }
 
 .active { /* Defines the color of the project table on the 'Index.html' page to 'active' */
@@ -106,7 +114,7 @@ tr:nth-child(even) { /* Defines the... I dont really know what this does, just t
 }
 
 .moderately_active { /* Defines the color of the project table on the 'Index.html' page to 'inactive' */
-    background-color: rgba(150, 50, 50, 0.5);
+    background-color: rgba(150, 150, 50, 0.5);
 }
 
 .Operational { /* Defines the color of the table to show if something is 'Operational' */
