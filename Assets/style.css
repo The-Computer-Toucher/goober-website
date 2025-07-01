@@ -102,7 +102,11 @@ tr:nth-child(even) { /* Defines the... I dont really know what this does, just t
 }
 
 .inactive { /* Defines the color of the project table on the 'Index.html' page to 'inactive' */
-    background-color: rgba(50, 150, 50, 0.5);
+    background-color: rgba(150, 50, 50, 0.5);
+}
+
+.moderately_active { /* Defines the color of the project table on the 'Index.html' page to 'inactive' */
+    background-color: rgba(150, 50, 50, 0.5);
 }
 
 .Operational { /* Defines the color of the table to show if something is 'Operational' */
