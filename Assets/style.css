@@ -78,6 +78,13 @@ table { /* Used to define the tables on any givin page */
   /* font-size: 12px; */
 }
 
+.Key_table { /* Used to define the tables on any givin page */
+  font-family: sans-serif;
+  border-collapse: collapse;
+  width: 10%;
+  /* font-size: 12px; */
+}
+
 td { /* Table data (the text or images or any thing that goes in the table) */
   border: 1px solid rgb(19, 85, 146);
   text-align: center;
