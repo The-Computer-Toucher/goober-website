@@ -42,7 +42,7 @@ h4 { /* Used for sub titles but in the center */
 }
 
 :any-link { /* changes the color of any links on the website */
-    color: rgb(100, 100, 255);
+    color: rgb(100, 175, 255);
 }
 
 ::grammar-error{
