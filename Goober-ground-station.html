@@ -18,10 +18,12 @@
       <h3 id="Introduction"> Introduction </h3>
       <p> Goober Ground Station (GGS), heavily relies on computers </p>
       <h3 id="Orbital_parameters"> Satellite orbital parameters </h3> <!-- sub titile -->
+      <P> The following table contains some of the basic orbital parameters of satellites that I have received and are planning to receive data from. </P>
       <table> <!-- a table containing a whole bunch of data regarding the satellites i have and sitll are using -->
         <tr> <!-- the headings for the table-->
           <th> Satellite </th>
-          <th> <a href="https://en.wikipedia.org/wiki/Apsis"> Perigee altitude</a>(m) </th>
+          <th> <a href="https://en.wikipedia.org/wiki/Orbital_eccentricity"> Eccentricity</a> </th>
+          <th> <a href="https://en.wikipedia.org/wiki/Apsis"> Perigee altitude</a>(m) </th> <!-- the link takes the user to a wikipedia page on -->
           <th> <a href="https://en.wikipedia.org/wiki/Apsis"> Apogee altitude</a>(m) </th>
           <th> <a href="https://en.wikipedia.org/wiki/Orbital_inclination"> Inclination</a>(°) </th>
           <th> <a href="https://en.wikipedia.org/wiki/Orbital_inclination"> Orbital Period</a>(minutes) </th>
@@ -29,9 +31,11 @@
           <th> Status </th>
           <th> <a href="https://en.wikipedia.org/wiki/Two-line_element_set"> TLE</a> Link </th>
           <th> Notes </th>
+          <th> Tracked or Data Received  </th>
         </tr>
           <tr> 
             <td> <b> NOAA-15 (NOAA-K) </b> </td> <!-- Satellite -->
+            <td> 0.0009059 </td> <!--Eccentricity -->
             <td> Aprox. 808,000 m </td> <!-- Perigee -->
             <td> Aprox. 795,000 m </td> <!-- Apogee -->
             <td> 98.53° </td> <!-- Inclination -->
@@ -40,9 +44,11 @@
             <td class="Operational"> Operational </td> <!-- Status -->
             <td> <a href="http://celestrak.org/NORAD/elements/gp.php?CATNR=25338&FORMAT=tle"> NOAA-15 TLE </a> </td> <!-- TLE link -->
             <td> Its in end of life testing, may shutdown soon. </td> <!-- Note about the satellite -->
+            <td class="Yes"> Yes </td> <!-- Data Received or Sat Tracked -->
           </tr>
           <tr> 
             <td> <b> NOAA-18 (NOAA-N) </b> </td> <!-- Satellite -->
+            <td> 0.0015179 </td>
             <td> Aprox. 836,000 m </td> <!-- Perigee -->
             <td> Aprox. 858,000 m </td> <!-- Apogee -->
             <td> 98.74° </td> <!-- Inclination -->
@@ -51,31 +57,81 @@
             <td class="Functional_Off"> Shutdown </td> <!-- Status -->
             <td> <a href="http://celestrak.org/NORAD/elements/gp.php?CATNR=28654&FORMAT=tle"> NOAA-18 TLE </a> </td> <!-- TLE link -->
             <td> NOAA permanently shutdown NOAA-18 due to a <a href="https://www.nesdis.noaa.gov/about/documents-reports/notice-of-changes/2025-notice-of-changes/decommissioning-of-noaa-18-scheduled-june-6-2025-1733-1749-utc"> failure of its S band transmitter</a>, reducing its power output from 7W to 0.8W. Jeopardizing the telemetry signals strength, and NOAA's ability to control the satellite. </td> <!-- Note about the satellite -->
+            <td class="Yes"> Yes </td> <!-- Data Received or Sat Tracked -->
           </tr>
           <tr> 
-            <td> <b> NOAA-19 or NOAA-Prime (NOAA-N)</b> </td> <!-- Satellite -->
+            <td> <b> NOAA-19 (NOAA-N Prime) </b> </td> <!-- Satellite -->
+            <td> 0.0012739 </td> <!--Eccentricity -->
+            <td> Aprox. 839,000 m</td> <!-- Perigee -->
+            <td> Aprox. 857,000 m</td> <!-- Apogee -->
+            <td> 99.00° </td> <!-- Inclination -->
+            <td> Aprox. 101.88 min </td> <!-- Orbital period -->
+            <td> 33591 </td> <!-- NORAD id -->
+            <td class="Operational"> Operational </td> <!-- Status -->
+            <td> <a href="http://celestrak.org/NORAD/elements/gp.php?CATNR=33591&FORMAT=tle"> NOAA-19 TLE</a> </td> <!-- TLE link -->
+            <td> NOAA-19 </td> <!-- Note about the satellite -->
+            <td class="Yes"> Yes </td> <!-- Data Received or Sat Tracked -->
+          </tr>
+          <tr> 
+            <td> <b> <a href="https://www.amsat.org/two-way-satellites/ao-7/"> AMSAT OSCAR 7 (AO-7)</a> </b> </td> <!-- Satellite -->
+            <td> </td> <!--Eccentricity -->
+            <td> Aprox. 1,439,000 m </td> <!-- Perigee -->
+            <td> Aprox. 1,459,000 m </td> <!-- Apogee -->
+            <td> 101.99° </td> <!-- Inclination -->
+            <td> Aprox. 114.86 min </td> <!-- Orbital period -->
+            <td> 7530 </td> <!-- NORAD id -->
+            <td class="Operational_Limited"> Operational </td> <!-- Status -->
+            <td> <a href="http://celestrak.org/NORAD/elements/gp.php?CATNR=7530&FORMAT=tle"> AO-7 TLE</a> </td> <!-- TLE link -->
+            <td> Only operational in direct sunlight, due to a battery failure in 1981. (Also the second oldest functional satellite in orbit) </td> <!-- Note about the satellite -->
+            <td class="Yes"> Yes </td> <!-- Data Received or Sat Tracked -->
+          </tr>
+          <tr> 
+            <td> <b></b> </td> <!-- Satellite -->
+            <td> </td> <!--Eccentricity -->
             <td> </td> <!-- Perigee -->
             <td> </td> <!-- Apogee -->
             <td> </td> <!-- Inclination -->
             <td> </td> <!-- Orbital period -->
             <td> </td> <!-- NORAD id -->
-            <td class="Operational"> Operational </td> <!-- Status -->
+            <td class=""> </td> <!-- Status -->
             <td> <a href=""> </a> </td> <!-- TLE link -->
             <td> </td> <!-- Note about the satellite -->
+            <td class=""> </td> <!-- Data Received or Sat Tracked -->
+          </tr>
+          <tr> 
+            <td> <b></b> </td> <!-- Satellite -->
+            <td> </td> <!--Eccentricity -->
+            <td> </td> <!-- Perigee -->
+            <td> </td> <!-- Apogee -->
+            <td> </td> <!-- Inclination -->
+            <td> </td> <!-- Orbital period -->
+            <td> </td> <!-- NORAD id -->
+            <td class=""> </td> <!-- Status -->
+            <td> <a href=""> </a> </td> <!-- TLE link -->
+            <td> </td> <!-- Note about the satellite -->
+            <td class=""> </td> <!-- Data Received or Sat Tracked -->
           </tr>
       </table>
       <table class="Key_table"> <!-- the legend or key to show what each color means -->
         <tr> 
           <th> KEY </th>
+          <th> </th>
+        </tr>
+        <tr> 
+          <th> Is Operational? </th>
+          <th> Yes/No/Planning (Planning on doing some thing) </th>
         </tr>
         <tr>
           <td class="Operational"> Operational </td>
+          <td class="Yes"> Yes </td>
         </tr>
         <tr>
           <td class="Operational_Limited"> Operational Limited </td>
+          <td class="No"> No </td>
         </tr>
         <tr>
           <td class="Operational_Degraded"> Operational Degraded</td>
+          <td class="Planning"> Planning </td>
         </tr>
         <tr>
           <td class="Nonoperational"> Nonoperational </td>
@@ -88,11 +144,11 @@
         </tr>
       </table>
     <h3 id="References"> References </h3>
-    https://www.cpc.ncep.noaa.gov/products/stratosphere/strat_a_f/NOAA-K.pdf
-    https://space.oscar.wmo.int/satellites/view/noaa_15
-    https://space.oscar.wmo.int/satellites/view/noaa_18
-    https://www.ospo.noaa.gov/operations/poes/status.html
-    http://celestrak.org/NORAD/elements/
+    <p> <a href="https://www.cpc.ncep.noaa.gov/products/stratosphere/strat_a_f/NOAA-K.pdf"> https://www.cpc.ncep.noaa.gov/products/stratosphere/strat_a_f/NOAA-K.pdf</a> </p>
+    <p> <a href="https://space.oscar.wmo.int/satellites/view/noaa_15"> https://space.oscar.wmo.int/satellites/view/noaa_15</a> </p>
+    <p> <a href="https://space.oscar.wmo.int/satellites/view/noaa_18"> https://space.oscar.wmo.int/satellites/view/noaa_18</a> </p>
+    <p> <a href="https://www.ospo.noaa.gov/operations/poes/status.html"> https://www.ospo.noaa.gov/operations/poes/status.html</a> </p>
+    <p> <a href="http://celestrak.org/NORAD/elements/"> http://celestrak.org/NORAD/elements/</a> </p>
     <div> <!-- defines the box that the link is in -->
       <a href="Index.html">Home page</a> <!-- defines the link abck to the home page or 'index' -->
     </div>
