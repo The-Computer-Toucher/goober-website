@@ -110,13 +110,17 @@ tr:nth-child(even) { /* Defines the... I dont really know what this does, just t
     height: 80px;
 }
 
-.Yes { /* Defines the color of the tables yes or no columns to 'No' */
+.Yes { /* Defines the color that indicates 'Yes' on a table */
     background-color: rgba(50, 150, 50, 0.5);
 }
 
-.No { /* Defines the color of the project table on the 'Index.html' page to 'Yes' */
+.No { /* Defines the color that indicates 'No' on a table */
     background-color: rgba(150, 50, 50, 0.5);
 }
+
+.Planning { /* Defines the color that indicates that im 'Planning' on doing some thing, on a table */
+    background-color: rgba(50, 50, 150, 0.5);
+} 
 
 .active { /* Defines the color of the project table on the 'Index.html' page to 'active' */
     background-color: rgba(50, 150, 50, 0.5);
