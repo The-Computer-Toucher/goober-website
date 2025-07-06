@@ -13,25 +13,94 @@
     <h1> STILL UNDER DEVELOPMENT </h1> <!-- very stil under development-->
       <p> </p>
       <p> 1. <a href="#Introduction">Introduction</a> </p> <!-- a link that take the user to the 'Introduction' paragraph -->
-      <p> 1. <a href="#Introduction">Introduction</a> </p> <!-- a link that take the user to the 'Introduction' paragraph -->
-      <p> 2. <a href="#">Satellites</a> </p> <!-- a link that take the user to the 'Orbital_parameters' table -->
-      <p> 3. <a href="#Satellite_properties">Satellite properties</a> </p> <!-- a link that take the user to the 'Satellite_properties' table -->
-      <p> 4. <a href="#Orbital_parameters">Satellite orbital parameters</a> </p> <!-- a link that take the user to the 'Orbital_parameters' table -->
+      <p> 2. <a href="#Satellite_list">Satellites received / tracked / planning</a> </p> <!-- a link that take the user to the '' paragraph -->
+      <p> 3. <a href="#Orbital_parameters">Satellite orbital parameters</a> </p> <!-- a link that take the user to the 'Orbital_parameters' table -->
+      <p> 4. <a href="#Satellite_properties">Satellite properties</a> </p> <!-- a link that take the user to the 'Satellite_properties' table -->
       <p> 999. <a href="#References">References</a> </p> <!-- a link that take the user to the 'References' -->
       <h3 id="Introduction"> Introduction </h3>
       <p> Goober Ground Station (GGS), heavily relies on computers </p>
       <h3 id="Satellite_list">Satellites received / tracked / planning Table</h3>
       <p> </p>
-      <table>
+      <table> <!-- this table show what satellites I have recived/tracked or I am planing to recive/track -->
         <tr>
-          <th> </th>
+          <th> Satellite </th> 
+          <th> Status </th>
+          <th> Received/Tracked </th>
+          <th> Notes </th>
         </tr>
         <tr>
-          <td> </td>
+          <td> <b> <a href="https://nssdc.gsfc.nasa.gov/nmc/spacecraft/display.action?id=1998-030A"> NOAA-15</a> (NOAA-K) </b> </td> <!-- Satellite -->
+          <td class="Operational_Limited"> Operational </td> <!-- Status-->
+          <td class="Yes"> Yes </td> <!-- Received/Tracked -->
+          <td> Its in its end of service period. </td> <!-- Notes -->
+        </tr>
+        <tr>
+          <td> <b> <a href="https://nssdc.gsfc.nasa.gov/nmc/spacecraft/display.action?id=2005-018A"> NOAA-18</a> (NOAA-N) </b> </td> <!-- Satellite -->
+          <td class="Functional_Off"> Shutdown </td> <!-- Status-->
+          <td class="Yes"> Yes </td> <!-- Received/Tracked -->
+          <td> NOAA permanently shutdown NOAA-18 on June 6th 2025 at 17:33-17:49 UTC, due to a failure in the S band transmitter; reducing to transmitter power output from 7W to 0.8W. Jeopardizing the satellites telemetry and NOAA's ability to control the satellite. </td> <!-- Notes -->
+        </tr>
+        <tr>
+          <td> <b> <a href="https://nssdc.gsfc.nasa.gov/nmc/spacecraft/display.action?id=2009-005A"> NOAA-19</a> (NOAA-N Prime) </b> </td> <!-- Satellite -->
+          <td class="Operational"> Operational </td> <!-- Status-->
+          <td class="Yes"> Yes </td> <!-- Received/Tracked -->
+          <td> Its in its end of service period. </td> <!-- Notes -->
+        </tr>
+        <tr>
+          <td> <b> AMSAT OSCAR-7 <a href="https://www.amsat.org/two-way-satellites/ao-7/">  (AO-7)</a> </b> </td> <!-- Satellite -->
+          <td class="Operational_Limited"> Operational </td> <!-- Status-->
+          <td class="Yes"> Yes </td> <!-- Received/Tracked -->
+          <td> Only transmittes in sun light, due a battery failure in mid-1981. </td> <!-- Notes -->
+        </tr>
+        <tr>
+          <td> <b> AMSAT OSCAR-10 <a href="https://amsat-dl.org/en/amsat-phase-3-b-oscar-10/">  (AO-10)</a> </b> </td> <!-- Satellite -->
+          <td class="Contradicting"> Contradicting</td> <!-- Status-->
+          <td class="Planning"> Planning </td> <!-- Received/Tracked -->
+          <td> There is contradicting information on the satellites status, and I'm also having a hard time finding historical documentation for this satellite. I'm hoping to at least see it visually. </td> <!-- Notes -->
+        </tr>
+        <tr>
+          <td> <b> <a href=""> </a>  </b> </td> <!-- Satellite -->
+          <td class=""> </td> <!-- Status-->
+          <td class="">  </td> <!-- Received/Tracked -->
+          <td> </td> <!-- Notes -->
+        </tr>
+      </table>
+      <table class="Key_table"> <!-- the legend or key to define what each color means -->
+        <tr> 
+          <th> KEY </th>
+          <th> </th>
+        </tr>
+        <tr> 
+          <th> Is Operational? </th>
+          <th> Yes/No/Planning (Planning on doing some thing) </th>
+        </tr>
+        <tr>
+          <td class="Operational"> Operational </td>
+          <td class="Yes"> Yes </td>
+        </tr>
+        <tr>
+          <td class="Operational_Limited"> Operational Limited </td>
+          <td class="No"> No </td>
+        </tr>
+        <tr>
+          <td class="Operational_Degraded"> Operational Degraded</td>
+          <td class="Planning"> Planning </td>
+        </tr>
+        <tr>
+          <td class="Nonoperational"> Nonoperational </td>
+        </tr>
+        <tr>
+          <td class="Functional_Off"> Functional Off </td>
+        </tr>
+        <tr>
+          <td class="Contradicting"> Contradicting Info </td>
+        </tr>
+        <tr>
+          <td class="Unknown"> Unknown </td>
         </tr>
       </table>
       <h3 id="Orbital_parameters"> Satellite orbital parameters </h3> <!-- sub titile -->
-      <P> The following table contains some of the basic orbital parameters of satellites that I have received and are planning to receive data from. </P>
+      <P> The following table contains some of the basic orbital parameters of satellites that I have received and are planning to receive data from each satellite. </P>
       <table> <!-- a table containing a whole bunch of data regarding the satellites i have and sitll are using -->
         <tr> <!-- the headings for the table-->
           <th> Satellite </th>
@@ -123,37 +192,6 @@
             <td> </td> <!-- NORAD id -->
             <td> <a href=""> </a> </td> <!-- TLE link -->
           </tr>
-      </table>
-      <table class="Key_table"> <!-- the legend or key to show what each color means -->
-        <tr> 
-          <th> KEY </th>
-          <th> </th>
-        </tr>
-        <tr> 
-          <th> Is Operational? </th>
-          <th> Yes/No/Planning (Planning on doing some thing) </th>
-        </tr>
-        <tr>
-          <td class="Operational"> Operational </td>
-          <td class="Yes"> Yes </td>
-        </tr>
-        <tr>
-          <td class="Operational_Limited"> Operational Limited </td>
-          <td class="No"> No </td>
-        </tr>
-        <tr>
-          <td class="Operational_Degraded"> Operational Degraded</td>
-          <td class="Planning"> Planning </td>
-        </tr>
-        <tr>
-          <td class="Nonoperational"> Nonoperational </td>
-        </tr>
-        <tr>
-          <td class="Functional_Off"> Functional Off </td>
-        </tr>
-        <tr>
-          <td class="Unknown"> Unknown </td>
-        </tr>
       </table>
       <h3 id="Satellite_properties"> Satellite properties </h3> <!-- sub titile -->
     <h3 id="References"> References </h3>
