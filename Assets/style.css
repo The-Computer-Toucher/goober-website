@@ -81,7 +81,7 @@ table { /* Used to define the tables on any givin page */
 .Key_table { /* Used to define the tables on any givin page */
   font-family: sans-serif;
   border-collapse: collapse;
-  width: 10%;
+  width: 15%;
   /* font-size: 12px; */
 }
 
@@ -111,49 +111,54 @@ tr:nth-child(even) { /* Defines the... I dont really know what this does, just t
 }
 
 .Yes { /* Defines the color that indicates 'Yes' on a table */
-    background-color: rgba(50, 150, 50, 0.5);
+    background-color: rgba(50, 150, 50, 0.6);
 }
 
 .No { /* Defines the color that indicates 'No' on a table */
-    background-color: rgba(150, 50, 50, 0.5);
+    background-color: rgba(150, 50, 50, 0.6);
 }
 
 .Planning { /* Defines the color that indicates that im 'Planning' on doing some thing, on a table */
-    background-color: rgba(50, 50, 150, 0.5);
+    background-color: rgba(50, 50, 150, 0.6);
 } 
 
 .active { /* Defines the color of the project table on the 'Index.html' page to 'active' */
-    background-color: rgba(50, 150, 50, 0.5);
-}
-
-.inactive { /* Defines the color of the project table on the 'Index.html' page to 'inactive' */
-    background-color: rgba(150, 50, 50, 0.5);
+    background-color: rgba(50, 150, 50, 0.6);
 }
 
 .moderately_active { /* Defines the color of the project table on the 'Index.html' page to 'inactive' */
-    background-color: rgba(150, 150, 50, 0.5);
+    background-color: rgba(150, 150, 50, 0.6);
+}
+
+.inactive { /* Defines the color of the project table on the 'Index.html' page to 'inactive' */
+    background-color: rgba(150, 50, 50, 0.6);
 }
 
 .Operational { /* Defines the color of the table to show if something is 'Operational' */
-    background-color: rgba(50, 150, 50, 0.5);
+    background-color: rgba(50, 150, 50, 0.6);
 }
 
 .Operational_Limited { /* Defines the colors of the table to show if something is 'Operational_Limited' */
-    background-color: rgba(150, 150, 50, 0.5);
+
+    background-color: rgba(150, 150, 50, 0.6);
 }
 
 .Operational_Degraded { /* Defines the colors of the table to show if something is 'Operational_Degraded' */
-    background-color: rgba(250, 150, 50, 0.5);
+    background-color: rgba(150, 100, 50, 0.6);
 }
 
 .Nonoperational { /* Defines the colors of the table to show if something is 'Nonoperational' */
-    background-color: rgba(150, 50, 50, 0.5);
+    background-color: rgba(150, 50, 50, 0.6);
 }
 
 .Functional_Off { /* Defines the colors of the table to show if something is 'Functional_Off' */
-    background-color: rgba(50, 50, 150, 0.5);
+    background-color: rgba(50, 50, 150, 0.6);
+}
+
+.Contradicting { /* Defines the colors of the table to show if something is 'Contradicting' */
+    background-color: rgba(150, 150, 150, 0.6)
 }
 
 .Unknown { /* Defines the colors of the table to show if something is 'Unknown' */
-    background-color: rgba(150, 50, 150, 0.5);
+    background-color: rgba(150, 50, 150, 0.6);
 }
