@@ -110,6 +110,7 @@ tr:nth-child(even) { /* Defines the... I dont really know what this does, just t
     height: 80px;
 }
 
+/* Yes or no questions */
 .Yes { /* Defines the color that indicates 'Yes' on a table */
     background-color: rgba(50, 150, 50, 0.6);
 }
@@ -118,6 +119,41 @@ tr:nth-child(even) { /* Defines the... I dont really know what this does, just t
     background-color: rgba(150, 50, 50, 0.6);
 }
 
+/* The 'Orbital_Status' */
+.In_orbit {
+    background-color: rgba(50, 150, 50, 0.6); /* Defines the color for the 'Orbital_Status', for 'In_Orbit' */
+}
+
+.Ejected {
+    background-color: rgba(150, 150, 50, 0.6); /* Defines the color for the 'Orbital_Status', for 'Ejected' */
+}
+
+.Decayed {
+    background-color: rgba(150, 50, 50, 0.6); /* Defines the color for the 'Orbital_Status', for 'Decayed' */
+}
+
+.Unknown {
+    background-color: rgba(150, 50, 150, 0.6); /* Defines the color for the 'Orbital_Status', for 'Unknown' */
+}
+
+/* The 'Orbit_Type' */
+.LEO_Polar { /* Defines the color for each orbit type, in this case it for a polar low Earth orbit */
+    background-color: rgba();
+}
+
+.LEO_SSO { /* Defines the color for each orbit type, in this case it for a low Earth sun sychronise orbit (polar) */
+    background-color: rgba();
+}
+
+.LEO_Inclined { /* Defines the color for each orbit type, in this case it for a inclined low Earth orbit */
+    background-color: rgba();
+}
+
+.LEO_Equatorial { /* Defines the color for each orbit type, in this case it for a equatorial low Earth orbit */
+    background-color: rgba();
+}
+
+/* The project status */
 .Planning { /* Defines the color that indicates that im 'Planning' on doing some thing, on a table */
     background-color: rgba(50, 50, 150, 0.6);
 } 
@@ -134,6 +170,7 @@ tr:nth-child(even) { /* Defines the... I dont really know what this does, just t
     background-color: rgba(150, 50, 50, 0.6);
 }
 
+/* The status of the satellites */
 .Operational { /* Defines the color of the table to show if something is 'Operational' */
     background-color: rgba(50, 150, 50, 0.6);
 }
