@@ -30,13 +30,13 @@
         </tr>
         <tr>
           <td> <b> <a href="https://nssdc.gsfc.nasa.gov/nmc/spacecraft/display.action?id=1998-030A"> NOAA-15</a> (NOAA-K) </b> </td> <!-- Satellite -->
-          <td class="Operational_Limited"> Operational </td> <!-- Status-->
+          <td class="Operational_Degraded"> Operational Degraded </td> <!-- Status-->
           <td class="Yes"> Yes </td> <!-- Received/Tracked -->
           <td> Its in its end of service period. </td> <!-- Notes -->
         </tr>
         <tr>
           <td> <b> <a href="https://nssdc.gsfc.nasa.gov/nmc/spacecraft/display.action?id=2005-018A"> NOAA-18</a> (NOAA-N) </b> </td> <!-- Satellite -->
-          <td class="Functional_Off"> Shutdown </td> <!-- Status-->
+          <td class="Functional_Off"> Functional Off </td> <!-- Status-->
           <td class="Yes"> Yes </td> <!-- Received/Tracked -->
           <td> NOAA permanently shutdown NOAA-18 on June 6th 2025 at 17:33-17:49 UTC, due to a failure in the S band transmitter; reducing to transmitter power output from 7W to 0.8W. Jeopardizing the satellites telemetry and NOAA's ability to control the satellite. </td> <!-- Notes -->
         </tr>
@@ -47,16 +47,22 @@
           <td> Its in its end of service period. </td> <!-- Notes -->
         </tr>
         <tr>
-          <td> <b> AMSAT OSCAR-7 <a href="https://www.amsat.org/two-way-satellites/ao-7/">  (AO-7)</a> </b> </td> <!-- Satellite -->
-          <td class="Operational_Limited"> Operational </td> <!-- Status-->
+          <td> <b> AMSAT OSCAR-7 <a href="https://www.amsat.org/two-way-satellites/ao-7/"> (AO-7)</a> </b> </td> <!-- Satellite -->
+          <td class="Operational_Limited"> Operational Limited </td> <!-- Status-->
           <td class="Yes"> Yes </td> <!-- Received/Tracked -->
           <td> Only transmittes in sun light, due a battery failure in mid-1981. </td> <!-- Notes -->
         </tr>
         <tr>
-          <td> <b> AMSAT OSCAR-10 <a href="https://amsat-dl.org/en/amsat-phase-3-b-oscar-10/">  (AO-10)</a> </b> </td> <!-- Satellite -->
-          <td class="Contradicting"> Contradicting</td> <!-- Status-->
+          <td> <b> AMSAT OSCAR-10 <a href="https://amsat-dl.org/en/amsat-phase-3-b-oscar-10/"> (AO-10)</a> </b> </td> <!-- Satellite -->
+          <td class="Contradicting"> Contradicting </td> <!-- Status-->
           <td class="Planning"> Planning </td> <!-- Received/Tracked -->
           <td> There is contradicting information on the satellites status, and I'm also having a hard time finding historical documentation for this satellite. I'm hoping to at least see it visually. </td> <!-- Notes -->
+        </tr>
+        <tr>
+          <td> <b> <a href="https://nssdc.gsfc.nasa.gov/nmc/spacecraft/display.action?id=1998-067A"> ISS (ZARYA)</a> </b> </td> <!-- Satellite -->
+          <td class="Operational"> Operational </td> <!-- Status-->
+          <td class="Yes"> Yes </td> <!-- Received/Tracked -->
+          <td> The International Space Station, Its planned to deorbit in 2030. </td> <!-- Notes -->
         </tr>
         <tr>
           <td> <b> <a href=""> </a>  </b> </td> <!-- Satellite -->
@@ -104,6 +110,8 @@
       <table> <!-- a table containing a whole bunch of data regarding the satellites i have and sitll are using -->
         <tr> <!-- the headings for the table-->
           <th> Satellite </th>
+          <th> Orbit Type </th>
+          <th> Orbital Status </th>
           <th> <a href="https://en.wikipedia.org/wiki/Orbital_eccentricity"> Eccentricity</a> </th>
           <th> <a href="https://en.wikipedia.org/wiki/Apsis"> Perigee altitude</a>(m) </th> <!-- the link takes the user to a wikipedia page on -->
           <th> <a href="https://en.wikipedia.org/wiki/Apsis"> Apogee altitude</a>(m) </th>
@@ -112,86 +120,32 @@
           <th> <a href="https://en.wikipedia.org/wiki/Satellite_Catalog_Number"> NORAD Id</a> </th>
           <th> <a href="https://en.wikipedia.org/wiki/Two-line_element_set"> TLE</a> Link </th>
         </tr>
-          <tr> 
-            <td> <b> <a href="https://nssdc.gsfc.nasa.gov/nmc/spacecraft/display.action?id=1998-030A"> NOAA-15</a> (NOAA-K) </b> </td> <!-- Satellite -->
-            <td> 0.0009059 </td> <!--Eccentricity -->
-            <td> Aprox. 808,000 m </td> <!-- Perigee -->
-            <td> Aprox. 795,000 m </td> <!-- Apogee -->
-            <td> 98.53° </td> <!-- Inclination -->
-            <td> Aprox. 100.91 min </td> <!-- Orbital period -->
-            <td> 25338 </td> <!-- NORAD id -->
-            <td> <a href="http://celestrak.org/NORAD/elements/gp.php?CATNR=25338&FORMAT=tle"> NOAA-15 TLE </a> </td> <!-- TLE link -->
-          </tr>
-          <tr> 
-            <td> <b> <a href="https://nssdc.gsfc.nasa.gov/nmc/spacecraft/display.action?id=2005-018A"> NOAA-18</a> (NOAA-N) </b> </td> <!-- Satellite -->
-            <td> 0.0015179 </td>
-            <td> Aprox. 836,000 m </td> <!-- Perigee -->
-            <td> Aprox. 858,000 m </td> <!-- Apogee -->
-            <td> 98.74° </td> <!-- Inclination -->
-            <td> Aprox. 101.87 min </td> <!-- Orbital period -->
-            <td> 28654 </td> <!-- NORAD id -->
-            <td> <a href="http://celestrak.org/NORAD/elements/gp.php?CATNR=28654&FORMAT=tle"> NOAA-18 TLE </a> </td> <!-- TLE link -->
-          </tr>
-          <tr> 
-            <td> <b> <a href="https://nssdc.gsfc.nasa.gov/nmc/spacecraft/display.action?id=2009-005A"> NOAA-19</a> (NOAA-N Prime) </b> </td> <!-- Satellite -->
-            <td> 0.0012739 </td> <!--Eccentricity -->
-            <td> Aprox. 839,000 m</td> <!-- Perigee -->
-            <td> Aprox. 857,000 m</td> <!-- Apogee -->
-            <td> 99.00° </td> <!-- Inclination -->
-            <td> Aprox. 101.88 min </td> <!-- Orbital period -->
-            <td> 33591 </td> <!-- NORAD id -->
-            <td> <a href="http://celestrak.org/NORAD/elements/gp.php?CATNR=33591&FORMAT=tle"> NOAA-19 TLE</a> </td> <!-- TLE link -->
-          </tr>
-          <tr> 
-            <td> <b> AMSAT OSCAR-7 <a href="https://www.amsat.org/two-way-satellites/ao-7/">  (AO-7)</a> </b> </td> <!-- Satellite -->
-            <td> 0.0012636 </td> <!--Eccentricity -->
-            <td> Aprox. 1,439,000 m </td> <!-- Perigee -->
-            <td> Aprox. 1,459,000 m </td> <!-- Apogee -->
-            <td> 101.99° </td> <!-- Inclination -->
-            <td> Aprox. 114.86 min </td> <!-- Orbital period -->
-            <td> 7530 </td> <!-- NORAD id -->
-            <td> <a href="http://celestrak.org/NORAD/elements/gp.php?CATNR=7530&FORMAT=tle"> AO-7 TLE</a> </td> <!-- TLE link -->
-          </tr>
-          <tr> 
-            <td> <b> AMSAT OSCAR-73 <a href="https://www.amsat.org/two-way-satellites/ao-7/">  (AO-73 or FUNCUBE)</a> </b> </td> <!-- Satellite -->
-            <td> </td> <!--Eccentricity -->
-            <td> Aprox. </td> <!-- Perigee -->
-            <td> Aprox. </td> <!-- Apogee -->
-            <td> </td> <!-- Inclination -->
-            <td> Aprox. </td> <!-- Orbital period -->
-            <td> </td> <!-- NORAD id -->
-            <td> <a href=""> </a> </td> <!-- TLE link -->
-          </tr>
-          <tr> 
-            <td> <b> <a href="https://en.wikipedia.org/wiki/International_Space_Station"> ISS</a>  </b> </td> <!-- Satellite -->
-            <td> 0.0002153 </td> <!--Eccentricity -->
-            <td> Aprox. 414,000 m </td> <!-- Perigee -->
-            <td> Aprox. 417,000 m </td> <!-- Apogee -->
-            <td> 51.64° </td> <!-- Inclination -->
-            <td> Aprox. 92.88 min</td> <!-- Orbital period -->
-            <td> 25544 </td> <!-- NORAD id -->
-            <td> <a href="http://celestrak.org/NORAD/elements/gp.php?CATNR=25544&FORMAT=tle"> ISS TLE</a> </td> <!-- TLE link -->
-          </tr>
-          <tr> 
-            <td> <b> UMKA 1 (RS40S) </b> </td> <!-- Satellite -->
-            <td> 0.0012861 </td> <!--Eccentricity -->
-            <td> Aprox. 510,000 m </td> <!-- Perigee -->
-            <td> Aprox. 528,000 m </td> <!-- Apogee -->
-            <td> 97.56° </td> <!-- Inclination -->
-            <td> Aprox. 95.01 min </td> <!-- Orbital period -->
-            <td> 57172 </td> <!-- NORAD id -->
-            <td> <a href="http://celestrak.org/NORAD/elements/gp.php?CATNR=57172&FORMAT=tle"> UMKA 1 TLE</a> </td> <!-- TLE link -->
-          </tr>
-          <tr> 
-            <td> <b></b> </td> <!-- Satellite -->
-            <td> </td> <!--Eccentricity -->
-            <td> Aprox. </td> <!-- Perigee -->
-            <td> Aprox. </td> <!-- Apogee -->
-            <td> </td> <!-- Inclination -->
-            <td> Aprox. </td> <!-- Orbital period -->
-            <td> </td> <!-- NORAD id -->
-            <td> <a href=""> </a> </td> <!-- TLE link -->
-          </tr>
+        <tr> 
+          <td> <b> </b> </td> <!-- Satellite -->
+          <td class=""> </td> <!-- Orbit type -->
+          <td class=""> </td> <!-- Orbital Status -->
+          <td> </td> <!--Eccentricity -->
+          <td> Aprox. </td> <!-- Perigee -->
+          <td> Aprox. </td> <!-- Apogee -->
+          <td> </td> <!-- Inclination -->
+          <td> Aprox. </td> <!-- Orbital period -->
+          <td> </td> <!-- NORAD id -->
+          <td> <a href=""> </a> </td> <!-- TLE link -->
+        </tr>
+      </table>
+      <table class="Key_table"> <!-- the legend or key to define what each color means -->
+        <tr> 
+          <th> KEY </th>
+          <th> </th>
+        </tr>
+        <tr> 
+          <th> Orbit Type </th>
+          <th> Orbit Status </th>
+        </tr>
+        <tr>
+          <td class=""> </td>
+          <td class=""> </td>
+        </tr>
       </table>
       <h3 id="Satellite_properties"> Satellite properties </h3> <!-- sub titile -->
     <h3 id="References"> References </h3>
