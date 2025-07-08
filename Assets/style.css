@@ -153,6 +153,14 @@ tr:nth-child(even) { /* Defines the... I dont really know what this does, just t
     background-color: rgba();
 }
 
+.MEO_Polar { /* Defines the color for each orbit type, in this case it for a polar medium Earth orbit */
+    background-color: rgba();
+}
+
+.MEO_Polar { /* Defines the color for each orbit type, in this case it for a medium Earth sun sychronise orbit (polar) */
+    background-color: rgba();
+}
+
 /* The project status */
 .Planning { /* Defines the color that indicates that im 'Planning' on doing some thing, on a table */
     background-color: rgba(50, 50, 150, 0.6);
