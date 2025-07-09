@@ -97,9 +97,14 @@ tr:nth-child(even) { /* Defines the... I dont really know what this does, just t
   background-color: white;
 }
 
-.img { /* Defines the color of the tables yes or no columns to 'Yes' */
+.img1 { /* Changes the size of a picture */
     width: auto;
     height: 80px;
+}
+
+.img2 { /* Changes the size of a picture */
+    width: auto;
+    height: 120px;
 }
 
 
@@ -191,8 +196,4 @@ tr:nth-child(even) { /* Defines the... I dont really know what this does, just t
 
 .Contradicting { /* Defines the colors of the table to show if something has 'Contradicting' info */
     background-color: rgba(150, 150, 150, 0.6)
-}
-
-.Unknown { /* Defines the colors of the table to show if something is 'Unknown' */
-    background-color: rgba(150, 50, 150, 0.6);
 }
