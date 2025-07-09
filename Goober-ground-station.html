@@ -12,17 +12,70 @@
     <h2> The Goober website </h2> <!-- the website title -->
     <h1> STILL UNDER DEVELOPMENT </h1> <!-- very stil under development-->
       <p> </p>
+      <h3> Page contents: </h3>
       <p> 1. <a href="#Introduction">Introduction</a> </p> <!-- a link that take the user to the 'Introduction' paragraph -->
-      <p> 2. <a href="#Satellite_list">Satellites received / tracked / planning</a> </p> <!-- a link that take the user to the '' paragraph -->
-      <p> 3. <a href="#Orbital_parameters">Satellite orbital parameters</a> </p> <!-- a link that take the user to the 'Orbital_parameters' table -->
-      <p> 4. <a href="#Satellite_properties">Satellite properties</a> </p> <!-- a link that take the user to the 'Satellite_properties' table -->
+      <p> 2. <a href="#Software/hardware_table">Software and Hardware Table</a> </p> <!-- a link that take the user to the 'Software and Hardware Table'  -->
+      <p> 3. <a href="#Satellite_list">Satellites received / tracked / planning</a> </p> <!-- a link that take the user to the 'Satellites received / tracked / planning' table -->
+      <p> 4. <a href="#Orbital_parameters">Satellite orbital parameters</a> </p> <!-- a link that take the user to the 'Orbital_parameters' table -->
+      <p> 5. <a href="#Satellite_properties">Satellite properties</a> </p> <!-- a link that take the user to the 'Satellite_properties' table -->
+      <p> 998. <a href="#Glossary">Glossary</a> </p> <!-- a link that take the user to the 'Glossary' -->
       <p> 999. <a href="#References">References</a> </p> <!-- a link that take the user to the 'References' -->
       <h3 id="Introduction"> Introduction </h3>
-      <p> Goober Ground Station (GGS), heavily relies on computers </p>
-      <h3 id="Satellite_list">Satellites received / tracked / planning Table</h3>
-      <p> </p>
-      <table> <!-- this table show what satellites I have recived/tracked or I am planing to recive/track -->
+      <p> Goober Ground Station tracks and receives data from satellites, later decoding data from them to get useful information and interesting information. The station is funded mostly by me, </p>
+      <h3 id="Software/hardware_table"> Software and Hardware Table </h3>
+      <p> Goober Ground Station (GGS), heavily relies on third party software and hardware. The folling tables lists all software and hardware used in the ground station. </p>
+      <h4> Software </h4>
+      <table> <!-- software -->
+        <tr> <!-- collum titles -->
+          <th> Name </th>
+          <th> Link </th>
+          <th> Picture </th>
+          <th> Description </th>
+        </tr>
         <tr>
+          <td> SDR++ </td> <!-- Name -->
+          <td> <a href="https://github.com/AlexandreRouma/SDRPlusPlus/releases/tag/nightly">https://github.com/AlexandreRouma/SDRPlusPlus/releases/tag/nightly</a> </td> <!-- Link -->
+          <td> <img class="img1" src="https://www.sdrpp.org/res/sdrpp.png"> </td> <!-- Picture -->
+          <td> SDR++ is a cross platform SDR software used for recording and listing to the audio, also used from replaying baseband files for things like SSTV. </td> <!-- Description -->
+        </tr>
+        <tr>
+          <td> SatDump </td> <!-- Name -->
+          <td> </td> <!-- Link -->
+          <td> </td> <!-- Picture -->
+          <td> </td> <!-- Description -->
+        </tr>
+        <tr>
+          <td> </td> <!-- Name -->
+          <td> </td> <!-- Link -->
+          <td> </td> <!-- Picture -->
+          <td> </td> <!-- Description -->
+        </tr>
+        <tr>
+          <td> </td> <!-- Name -->
+          <td> </td> <!-- Link -->
+          <td> </td> <!-- Picture -->
+          <td> </td> <!-- Description -->
+        </tr>
+      </table>
+      <h4> Hardware </h4>
+      <table> <!-- Hardware -->
+        <tr> <!-- collum titles -->
+          <th> Name </th>
+          <th> Link </th>
+          <th> Picture </th>
+          <th> Description </th>
+        </tr>
+        <tr>
+          <td> </td> <!-- Name -->
+          <td> </td> <!-- Link -->
+          <td> </td> <!-- Picture -->
+          <td> </td> <!-- Description -->
+        </tr>
+      </table>
+      <h3 id="Satellite_list">Satellites received / tracked / planning Table</h3>
+      <p> The following table lists all of the satellites that have been tracked or receive and or planning on tracking/receiving signals, from GGS. </p>
+      <table> <!-- this table show what satellites I have recived/tracked or I am planing to recive/track -->
+        <tr> <!-- collum titles -->
           <th> Satellite </th> 
           <th> Status </th>
           <th> Received/Tracked </th>
@@ -59,6 +112,12 @@
           <td> There is contradicting information on the satellites status, and I'm also having a hard time finding historical documentation for this satellite. I'm hoping to at least see it visually. </td> <!-- Notes -->
         </tr>
         <tr>
+          <td> <b> <a href=""> </a>  </b> </td> <!-- Satellite -->
+          <td class=""> </td> <!-- Status-->
+          <td class="">  </td> <!-- Received/Tracked -->
+          <td> </td> <!-- Notes -->
+        </tr>
+        <tr>
           <td> <b> <a href="https://nssdc.gsfc.nasa.gov/nmc/spacecraft/display.action?id=1998-067A"> ISS (ZARYA)</a> </b> </td> <!-- Satellite -->
           <td class="Operational"> Operational </td> <!-- Status-->
           <td class="Yes"> Yes </td> <!-- Received/Tracked -->
@@ -70,9 +129,15 @@
           <td class="">  </td> <!-- Received/Tracked -->
           <td> </td> <!-- Notes -->
         </tr>
+        <tr>
+          <td> <b> <a href=""> </a>  </b> </td> <!-- Satellite -->
+          <td class=""> </td> <!-- Status-->
+          <td class="">  </td> <!-- Received/Tracked -->
+          <td> </td> <!-- Notes -->
+        </tr>
       </table>
       <table class="Key_table"> <!-- the legend or key to define what each color means -->
-        <tr> 
+        <tr> <!-- collum title -->
           <th> KEY </th>
           <th> </th>
         </tr>
@@ -94,21 +159,21 @@
         </tr>
         <tr>
           <td class="Nonoperational"> Nonoperational </td>
+          <td> </td>
         </tr>
         <tr>
           <td class="Functional_Off"> Functional Off </td>
+          <td> </td>
         </tr>
         <tr>
           <td class="Contradicting"> Contradicting Info </td>
-        </tr>
-        <tr>
-          <td class="Unknown"> Unknown </td>
+          <td> </td>
         </tr>
       </table>
       <h3 id="Orbital_parameters"> Satellite orbital parameters </h3> <!-- sub titile -->
       <P> The following table contains some of the basic orbital parameters of satellites that I have received and are planning to receive data from each satellite. </P>
       <table> <!-- a table containing a whole bunch of data regarding the satellites i have and sitll are using -->
-        <tr> <!-- the headings for the table-->
+        <tr> <!-- collum titles -->
           <th> Satellite </th>
           <th> Orbit Type </th>
           <th> Orbital Status </th>
@@ -134,7 +199,7 @@
         </tr>
       </table>
       <table class="Key_table"> <!-- the legend or key to define what each color means -->
-        <tr> 
+        <tr> <!-- collum title -->
           <th> KEY </th>
           <th> </th>
         </tr>
@@ -143,10 +208,24 @@
           <th> Orbit Status </th>
         </tr>
         <tr>
-          <td class=""> </td>
-          <td class=""> </td>
+          <td class="LEO"> <a href="https://en.wikipedia.org/wiki/Low_Earth_orbit"> Low Earth Orbit </a> ( 160 - 2,000 km ) </td>
+          <td class="In_orbit"> In Orbit </td>
+        </tr>
+        <tr> 
+          <td class="MEO"> <a href="https://en.wikipedia.org/wiki/Medium_Earth_orbit"> Medium Earth Orbit </a> ( 2,000 - 35,786 km ) </td>
+          <td class="Ejected"> Ejected </td>
+        </tr>
+        <tr>
+          <td class="GEO"> GEO-<a href="https://en.wikipedia.org/wiki/Geostationary_orbit"> stationary</a> / <a href="https://en.wikipedia.org/wiki/Geosynchronous_orbit">synchronous </a> ( 35,786 km ) </td> 
+          <td class="Decayed"> Decayed </td>
+        </tr>
+        <tr>
+          <td class="HEO"> <a href="https://en.wikipedia.org/wiki/High_Earth_orbit"> High Earth Orbit </a> ( over 35,786 km ) </td>
+          <td class="Unknown"> Unknown </td>
         </tr>
       </table>
+      <h3 id="Glossary"> Glossary </h3>
+      
       <h3 id="Satellite_properties"> Satellite properties </h3> <!-- sub titile -->
     <h3 id="References"> References </h3>
     <p> <a href="https://www.cpc.ncep.noaa.gov/products/stratosphere/strat_a_f/NOAA-K.pdf"> https://www.cpc.ncep.noaa.gov/products/stratosphere/strat_a_f/NOAA-K.pdf</a> </p>
