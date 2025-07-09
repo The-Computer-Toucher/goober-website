@@ -45,14 +45,6 @@ h4 { /* Used for sub titles but in the center */
     color: rgb(100, 175, 255);
 }
 
-::grammar-error{
-    color: darkcyan;
-}
-
-::spelling-error{
-    color: red;
-}
-
 header { /* Used to make the header banner */
     background-color: rgb(19, 85, 146);
     text-align: center;
@@ -81,7 +73,7 @@ table { /* Used to define the tables on any givin page */
 .Key_table { /* Used to define the tables on any givin page */
   font-family: sans-serif;
   border-collapse: collapse;
-  width: 15%;
+  width: 20%;
   /* font-size: 12px; */
 }
 
@@ -110,6 +102,7 @@ tr:nth-child(even) { /* Defines the... I dont really know what this does, just t
     height: 80px;
 }
 
+
 /* Yes or no questions */
 .Yes { /* Defines the color that indicates 'Yes' on a table */
     background-color: rgba(50, 150, 50, 0.6);
@@ -118,6 +111,7 @@ tr:nth-child(even) { /* Defines the... I dont really know what this does, just t
 .No { /* Defines the color that indicates 'No' on a table */
     background-color: rgba(150, 50, 50, 0.6);
 }
+
 
 /* The 'Orbital_Status' */
 .In_orbit {
@@ -136,30 +130,24 @@ tr:nth-child(even) { /* Defines the... I dont really know what this does, just t
     background-color: rgba(150, 50, 150, 0.6); /* Defines the color for the 'Orbital_Status', for 'Unknown' */
 }
 
+
 /* The 'Orbit_Type' */
-.LEO_Polar { /* Defines the color for each orbit type, in this case it for a polar low Earth orbit */
-    background-color: rgba();
+.LEO { /* Defines the color for each orbit type, in this case it for a low Earth orbit */
+    background-color: rgba(0, 0, 150, 0.8);
 }
 
-.LEO_SSO { /* Defines the color for each orbit type, in this case it for a low Earth sun sychronise orbit (polar) */
-    background-color: rgba();
+.MEO { /* Defines the color for each orbit type, in this case it for a medium Earth orbit */
+    background-color: rgba(0, 0, 100, 0.7);
 }
 
-.LEO_Inclined { /* Defines the color for each orbit type, in this case it for a inclined low Earth orbit */
-    background-color: rgba();
+.GEO { /* Defines the color for each orbit type, in this case it for a geo-stationary/geo-synchronous Earth orbit */
+    background-color: rgba(0, 0, 75, 0.65);
 }
 
-.LEO_Equatorial { /* Defines the color for each orbit type, in this case it for a equatorial low Earth orbit */
-    background-color: rgba();
+.HEO { /* Defines the color for each orbit type, in this case it for a high Earth orbit */
+    background-color: rgba(0, 0, 50, 0.5);
 }
 
-.MEO_Polar { /* Defines the color for each orbit type, in this case it for a polar medium Earth orbit */
-    background-color: rgba();
-}
-
-.MEO_Polar { /* Defines the color for each orbit type, in this case it for a medium Earth sun sychronise orbit (polar) */
-    background-color: rgba();
-}
 
 /* The project status */
 .Planning { /* Defines the color that indicates that im 'Planning' on doing some thing, on a table */
@@ -177,6 +165,7 @@ tr:nth-child(even) { /* Defines the... I dont really know what this does, just t
 .inactive { /* Defines the color of the project table on the 'Index.html' page to 'inactive' */
     background-color: rgba(150, 50, 50, 0.6);
 }
+
 
 /* The status of the satellites */
 .Operational { /* Defines the color of the table to show if something is 'Operational' */
@@ -200,7 +189,7 @@ tr:nth-child(even) { /* Defines the... I dont really know what this does, just t
     background-color: rgba(50, 50, 150, 0.6);
 }
 
-.Contradicting { /* Defines the colors of the table to show if something is 'Contradicting' */
+.Contradicting { /* Defines the colors of the table to show if something has 'Contradicting' info */
     background-color: rgba(150, 150, 150, 0.6)
 }
 
