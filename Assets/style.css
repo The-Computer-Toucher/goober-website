@@ -98,7 +98,7 @@ tr:nth-child(even) { /* Defines the... I dont really know what this does, just t
 }
 
 .img1 { /* Changes the size of a picture */
-    width: auto;
+    width: 80px;
     height: 80px;
 }
 
