@@ -142,10 +142,25 @@
             <table> <!-- this table show what satellites I have recived/tracked or I am planing to recive/track -->
               <tr> <!-- collum titles -->
                 <th> Satellite </th> 
+                <th> Operator </th>
                 <th> Status </th>
                 <th> Received/Tracked </th>
                 <th> Notes </th>
                 <th> Purpose </th>
+              </tr>
+              <tr>
+                <td> <b> <a href=""> NOAA-2</a> (ITOS-D) </b> </td> <!-- Satellite -->
+                <td class="Derelict"> Derelict </td> <!-- Status-->
+                <td class="Planning"> Planning </td> <!-- Received/Tracked -->
+                <td> </td> <!-- Notes -->
+                <td> Meteorological/Earth science </td> <!-- Purpose -->
+              </tr>
+              <tr>
+                <td> <b> <a href=""> </a>  </b> </td> <!-- Satellite -->
+                <td class=""> </td> <!-- Status-->
+                <td class="">  </td> <!-- Received/Tracked -->
+                <td> </td> <!-- Notes -->
+                <td> </td> <!-- Purpose -->
               </tr>
               <tr>
                 <td> <b> <a href="https://nssdc.gsfc.nasa.gov/nmc/spacecraft/display.action?id=1998-030A"> NOAA-15</a> (NOAA-K) </b> </td> <!-- Satellite -->
@@ -156,9 +171,9 @@
               </tr>
               <tr>
                 <td> <b> <a href="https://nssdc.gsfc.nasa.gov/nmc/spacecraft/display.action?id=2005-018A"> NOAA-18</a> (NOAA-N) </b> </td> <!-- Satellite -->
-                <td class="Functional_Off"> Functional Off </td> <!-- Status-->
+                <td class="Damaged"> Damaged (Shutdown) </td> <!-- Status-->
                 <td class="Yes"> Yes </td> <!-- Received/Tracked -->
-                <td> NOAA permanently shutdown NOAA-18 on June 6th 2025 at 17:33-17:49 UTC, due to a failure in the S band transmitter; reducing to transmitter power output from 7W to 0.8W. Jeopardizing the satellites telemetry and NOAA's ability to control the satellite. </td> <!-- Notes -->
+                <td> NOAA permanently shutdown NOAA-18 on June 6th 2025 at 17:33-17:49 UTC due to a failure in the S band transmitter, reducing to transmitter power output from 7W to 0.8W. Jeopardizing the satellites telemetry and NOAA's ability to control the satellite. </td> <!-- Notes -->
                 <td> Meteorological/Earth science </td> <!-- Purpose -->
               </tr>
               <tr>
@@ -177,7 +192,7 @@
               </tr>
               <tr>
                 <td> <b> AMSAT OSCAR-10 <a href="https://amsat-dl.org/en/amsat-phase-3-b-oscar-10/"> (AO-10)</a> </b> </td> <!-- Satellite -->
-                <td class="Contradicting"> Contradicting </td> <!-- Status-->
+                <td class="Conflicting"> Conflicting Info </td> <!-- Status-->
                 <td class="Planning"> Planning </td> <!-- Received/Tracked -->
                 <td> There is contradicting information on the satellites status, and I'm also having a hard time finding historical documentation for this satellite. I'm hoping to at least see it visually. </td> <!-- Notes -->
                 <td> Ameture radio </td> <!-- Purpose -->
@@ -217,7 +232,7 @@
                 <th> </th>
               </tr>
               <tr> 
-                <th> Is Operational? </th>
+                <th> Functionality </th>
                 <th> Yes/No/Planning (Planning on doing some thing) </th>
               </tr>
               <tr>
@@ -233,7 +248,15 @@
                 <td class="Planning"> Planning </td>
               </tr>
               <tr>
+                <td class="Damaged"> Damaged </td>
+                <td> </td>
+              </tr>
+              <tr>
                 <td class="Nonoperational"> Nonoperational </td>
+                <td> </td>
+              </tr>
+              <tr>
+                <td class="Destroyed"> Destroyed </td>
                 <td> </td>
               </tr>
               <tr>
@@ -241,7 +264,15 @@
                 <td> </td>
               </tr>
               <tr>
-                <td class="Contradicting"> Contradicting Info </td>
+                <td class="Stowed"> Stowed </td>
+                <td> </td>
+              </tr>
+              <tr>
+                <td class="Conflicting"> Conflicting Info </td>
+                <td> </td>
+              </tr>
+              <tr>
+                <td class="Derelict"> Derelict </td>
                 <td> </td>
               </tr>
             </table>
