@@ -108,7 +108,7 @@ tr:nth-child(even) { /* Defines the... I dont really know what this does, just t
 }
 
 
-/* Yes or no questions */
+/* Yes or no questions (ao 'Planning')*/
 .Yes { /* Defines the color that indicates 'Yes' on a table */
     background-color: rgba(50, 150, 50, 0.6);
 }
@@ -116,6 +116,10 @@ tr:nth-child(even) { /* Defines the... I dont really know what this does, just t
 .No { /* Defines the color that indicates 'No' on a table */
     background-color: rgba(150, 50, 50, 0.6);
 }
+
+.Planning { /* Defines the color that indicates that im 'Planning' on doing some thing, on a table */
+    background-color: rgba(50, 50, 150, 0.6);
+} 
 
 
 /* The 'Orbital_Status' */
@@ -155,7 +159,7 @@ tr:nth-child(even) { /* Defines the... I dont really know what this does, just t
 
 
 /* The project status */
-.Planning { /* Defines the color that indicates that im 'Planning' on doing some thing, on a table */
+.planning { /* Defines the color that indicates that im 'Planning' on doing some thing, on a table */
     background-color: rgba(50, 50, 150, 0.6);
 } 
 
@@ -186,7 +190,15 @@ tr:nth-child(even) { /* Defines the... I dont really know what this does, just t
     background-color: rgba(150, 100, 50, 0.6);
 }
 
+.Damaged { /* Defines the colors of the table to show if something is 'Damaged' */
+    background-color: rgba(150, 100, 50, 0.6);
+}
+
 .Nonoperational { /* Defines the colors of the table to show if something is 'Nonoperational' */
+    background-color: rgba(150, 50, 50, 0.6);
+}
+
+.Destroyed { /* Defines the colors of the table to show if something has been 'Destroyed' */
     background-color: rgba(150, 50, 50, 0.6);
 }
 
@@ -194,6 +206,14 @@ tr:nth-child(even) { /* Defines the... I dont really know what this does, just t
     background-color: rgba(50, 50, 150, 0.6);
 }
 
-.Contradicting { /* Defines the colors of the table to show if something has 'Contradicting' info */
-    background-color: rgba(150, 150, 150, 0.6)
+.Stowed { /* Defines the colors of the table to show if something is 'Stowed' */
+    background-color: rgba(50, 50, 150, 0.6);
+}
+
+.Conflicting { /* Defines the colors of the table to show if something has 'Conflicting' info */
+    background-color: rgba(200, 150, 150, 0.6);
+}
+
+.Derelict { /* Defines the colors of the table to show if something is 'Derelict' */
+    background-color: rgba(100, 100, 100, 0.6);
 }
