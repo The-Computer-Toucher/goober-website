@@ -41,6 +41,11 @@ h4 { /* Used for sub titles but in the center */
     font-size: 20px;
 }
 
+.Center { /* Used to align text in the center */
+    text-align: center;
+    font-size: 15px;
+}
+
 :any-link { /* changes the color of any links on the website */
     color: rgb(100, 175, 255);
 }
@@ -105,6 +110,11 @@ tr:nth-child(even) { /* Defines the... I dont really know what this does, just t
 .img2 { /* Changes the size of a picture */
     width: auto;
     height: 120px;
+}
+
+.img3 { /* Changes the size of a picture */
+    width: auto;
+    height: 10px;
 }
 
 
