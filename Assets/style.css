@@ -97,6 +97,14 @@ tr:nth-child(even) { /* Defines the... I dont really know what this does, just t
   background-color: white;
 }
 
+.img { /* Changes the size of a picture */
+    display: block;
+    width: 50%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .img1 { /* Changes the size of a picture */
     width: 80px;
     height: 80px;
