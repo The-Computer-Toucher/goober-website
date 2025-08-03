@@ -16,7 +16,7 @@
       <p> 1. <a href="#Introduction">Introduction</a> </p> <!-- a link that take the user to the 'Introduction' paragraph -->
       <p> 2. <a href="#Software/hardware_table">Software and Hardware Table</a> </p> <!-- a link that take the user to the 'Software and Hardware Table'  -->
       <p> 3. <a href="#Hardware_specs">Hardware specs</a> </p>
-      <p> 4. <a href="#Radio_spectrum">Receivable radio spectrum </a> </p>
+      <p> 4. <a href="#Radio_spectrum">Radio spectrum used</a> </p>
       <p> 5. <a href="#Satellite_list">Satellites received / tracked / planning</a> </p> <!-- a link that take the user to the 'Satellites received / tracked / planning' table -->
       <p> 6. <a href="#Orbital_parameters">Satellite orbital parameters</a> </p> <!-- a link that take the user to the 'Orbital_parameters' table -->
       <p> 7. <a href="#Satellite_properties">Satellite properties</a> </p> <!-- a link that take the user to the 'Satellite_properties' table -->
@@ -168,14 +168,99 @@
                 <td> </td>
               </tr>
             </table>
-              <h3 id="Radio_spectrum">Radio spectrum receivable</h3>
-              <p> The following table shows all and radio bands that can be recived by my current equipment, useing the <a href="https://en.wikipedia.org/wiki/Radio_spectrum#IEEE">IEEE</a> and <a href="https://en.wikipedia.org/wiki/Radio_spectrum#ITU">ITU</a> nomenclature. </p>
+              <h3 id="Radio_spectrum">Radio spectrum used</h3>
+              <p> The following table shows all and radio bands that can be recived/transmitted on by my current equipment, useing the <a href="https://en.wikipedia.org/wiki/Radio_spectrum#IEEE">IEEE</a> and <a href="https://en.wikipedia.org/wiki/Radio_spectrum#ITU">ITU</a> nomenclature. </p>
               <table>
                 <tr>
-                  <th> </th>
+                  <th> Receivable <a href="https://en.wikipedia.org/wiki/Radio_spectrum#ITU">ITU</a> Bands </th>
+                  <th> Transmittable  <a href="https://en.wikipedia.org/wiki/Radio_spectrum#ITU">ITU</a> Bands </th>
+                  <th> Receivable <a href="https://en.wikipedia.org/wiki/Radio_spectrum#IEEE">IEEE</a> Bands </th>
+                  <th> Transmittable  <a href="https://en.wikipedia.org/wiki/Radio_spectrum#IEEE">IEEE</a> Bands </th>
                 </tr>
                 <tr>
-                  <td> </td>
+                  <td class="Yes"> Medium frequency 300–3,000 kHz </td> <!-- Receivable ITU Bands -->
+                  <td class="No"> Medium frequency 300–3,000 kHz </td> <!-- Transmittable ITU Bands -->
+                  <td> N/A </td> <!-- Receivable IEEE Bands -->
+                  <td> N/A </td> <!-- Transmittable IEEE Bands -->
+                </tr>
+                <tr>
+                  <td class="Yes"> High frequency 3–30 MHz </td> <!-- Receivable ITU Bands -->
+                  <td class="No"> High frequency 3–30 MHz </td> <!-- Transmittable ITU Bands -->
+                  <td class="Yes"> High frequency 3–30 MHz </td> <!-- Receivable IEEE Bands -->
+                  <td class="No"> High frequency 3–30 MHz </td> <!-- Transmittable IEEE Bands -->
+                </tr>
+                <tr>
+                  <td class="Yes"> Very high frequency 30–300 MHz </td> <!-- Receivable ITU Bands -->
+                  <td class="No"> Very high frequency 30–300 MHz </td> <!-- Transmittable ITU Bands -->
+                  <td class="Yes"> Very high frequency 30–300 MHz </td> <!-- Receivable IEEE Bands -->
+                  <td class="No"> Very high frequency 30–300 MHz </td> <!-- Transmittable IEEE Bands -->
+                </tr>
+                <tr>
+                  <td class="Yes"> Ultra high frequency 300–3,000 MHz </td> <!-- Receivable ITU Bands -->
+                  <td class="Yes"> Ultra high frequency 300–3,000 MHz </td> <!-- Transmittable ITU Bands -->
+                  <td class="Yes"> Ultra high frequency 300-1000 MHz </td> <!-- Receivable IEEE Bands -->
+                  <td class="Yes"> Ultra high frequency 300-1000 MHz </td> <!-- Transmittable IEEE Bands -->
+                </tr>
+                <tr>
+                  <td class="Yes"> "" </td> <!-- Receivable ITU Bands -->
+                  <td class="Yes"> "" </td> <!-- Transmittable ITU Bands -->
+                  <td class="Yes"> L Band 1-2 Ghz </td> <!-- Receivable IEEE Bands -->
+                  <td class="No"> L Band 1-2 Ghz</td> <!-- Transmittable IEEE Bands -->
+                </tr>
+                <tr>
+                  <td class="Planning"> Super high frequency 3–30 GHz  </td> <!-- Receivable ITU Bands -->
+                  <td class="No"> Super high frequency 3–30 GHz  </td> <!-- Transmittable ITU Bands -->
+                  <td class="Planning"> S Band 2-4 GHz </td> <!-- Receivable IEEE Bands -->
+                  <td class="No"> S Band 2-4 GHz</td> <!-- Transmittable IEEE Bands -->
+                </tr>
+                <tr>
+                  <td class="Planning"> "" </td> <!-- Receivable ITU Bands -->
+                  <td class="No"> "" </td> <!-- Transmittable ITU Bands -->
+                  <td class="Planning"> C Band 4-8 GHz </td> <!-- Receivable IEEE Bands -->
+                  <td class="No"> C Band 4-8 GHz </td> <!-- Transmittable IEEE Bands -->
+                </tr>
+                <tr>
+                  <td class="Planning"> "" </td> <!-- Receivable ITU Bands -->
+                  <td class="No"> "" </td> <!-- Transmittable ITU Bands -->
+                  <td class="No"> X Band 8-12 GHz </td> <!-- Receivable IEEE Bands -->
+                  <td class="No"> X Band 8-12 GHz </td> <!-- Transmittable IEEE Bands -->
+                </tr>
+                <tr>
+                  <td class="Planning"> "" </td> <!-- Receivable ITU Bands -->
+                  <td class="No"> "" </td> <!-- Transmittable ITU Bands -->
+                  <td class="Planning"> Ku Band 12-18 GHz </td> <!-- Receivable IEEE Bands -->
+                  <td class="No"> Ku Band 12-18 GHz </td> <!-- Transmittable IEEE Bands -->
+                </tr>
+                <tr>
+                  <td class="Planning"> "" </td> <!-- Receivable ITU Bands -->
+                  <td class="No"> "" </td> <!-- Transmittable ITU Bands -->
+                  <td class="Planning"> K Band 18-27 GHz </td> <!-- Receivable IEEE Bands -->
+                  <td class="No"> K Band 18-27 GHz </td> <!-- Transmittable IEEE Bands -->
+                </tr>
+                <tr>
+                  <td class="Planning"> Extremely high frequency 	30–300 GHz </td> <!-- Receivable ITU Bands -->
+                  <td class="No"> Extremely high frequency 	30–300 GHz </td> <!-- Transmittable ITU Bands -->
+                  <td class="Planning"> Ka Band 27-40 GHz </td> <!-- Receivable IEEE Bands -->
+                  <td class="No"> Ka Band 27-40 GHz </td> <!-- Transmittable IEEE Bands -->
+                </tr>
+              </table>
+              <p> Heres a picture to better visualize the diffrent bands (This image is found on the <a href="https://en.wikipedia.org/wiki/Radio_spectrum">Radio Spectrum</a> Wikipedia page). </p>
+              <p> <img class="img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Frq_Band_Comparison.png/960px-Frq_Band_Comparison.png">  </p>
+              <table class="Key_table"> <!-- the legend or key to define what each color means -->
+                <tr> <!-- collum title -->
+                  <th> KEY </th>
+                </tr>
+                <tr> 
+                  <th> Yes/No/Planning </th>
+                </tr>
+                <tr>
+                  <td class="Yes"> Yes </td>
+                </tr>
+                <tr>
+                  <td class="No"> No </td>
+                </tr>
+                <tr>
+                  <td class="Planning"> Planning </td>
                 </tr>
               </table>
                 <h3 id="Satellite_list">Satellites received / tracked / planning Table</h3>
@@ -329,7 +414,7 @@
                     <td> <a href="https://www.nasa.gov/"> NASA</a> / <a href="https://www.noaa.gov/"> NOAA</a> </td> <!-- Operator -->
                     <td class="Derelict"> Derelict </td> <!-- Status-->
                     <td class="Planning"> Planning </td> <!-- Received/Tracked -->
-                    <td> The satellite has started transmiting HRPT again on 1697.5 MHz, It considered a "Zombie satellite" after it seemingly randomly started transmitting agian. The satellite only transmittes in sun light, Its also tumbling.  </td> <!-- Notes -->
+                    <td> The satellite has started transmiting HRPT again on ~1697.5 MHz, It considered a "Zombie satellite" after it seemingly randomly started transmitting agian. The satellite only transmittes in sun light, Its also tumbling.  </td> <!-- Notes -->
                     <td> Meteorological/Earth science </td> <!-- Discipline -->
                     <td> N/A </td> <!-- First observation -->
                   </tr>
@@ -440,7 +525,7 @@
                   </tr>
                   <tr> 
                     <th> Functionality </th>
-                    <th> Yes/No/Planning (Planning on doing some thing) </th>
+                    <th> Yes/No/Planning </th>
                   </tr>
                   <tr>
                     <td class="Operational"> Operational </td>
