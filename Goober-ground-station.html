@@ -11,6 +11,741 @@
     <header> <p> . </p> </header> <!-- defines the banner at the top of the page -->
     <h2> The Goober website </h2> <!-- the website title -->
     <h1> STILL UNDER DEVELOPMENT </h1> <!-- very stil under development-->
+    <div><p> Last updated: 09/08/2025 </p></div> <!-- When the last update to this page was -->
+      <h3> Page contents: </h3>
+      <p> 1. <a href="#Introduction">Introduction</a> </p> <!-- a link that take the user to the 'Introduction' paragraph -->
+      <p> 2. <a href="#Software/hardware_table">Software and Hardware Table</a> </p> <!-- a link that take the user to the 'Software and Hardware Table'  -->
+      <p> 3. <a href="#Hardware_specs">Hardware specs</a> </p>
+      <p> 4. <a href="#Radio_spectrum">Radio spectrum used</a> </p>
+      <p> 5. <a href="#Satellite_list">Satellites received / tracked / planning</a> </p> <!-- a link that take the user to the 'Satellites received / tracked / planning' table -->
+      <p> 6. <a href="#Orbital_parameters">Satellite orbital parameters</a> </p> <!-- a link that take the user to the 'Orbital_parameters' table -->
+      <p> 7. <a href="#Satellite_properties">Satellite properties</a> </p> <!-- a link that take the user to the 'Satellite_properties' table -->
+      <p> 998. <a href="#Glossary">Glossary</a> </p> <!-- a link that take the user to the 'Glossary' -->
+      <p> 999. <a href="#References">References</a> </p> <!-- a link that take the user to the 'References' -->
+        <h3 id="Introduction"> Introduction </h3>
+        <p> Goober Ground Station tracks and receives data from satellites, later decoding data from them to get useful information and interesting information. The station is funded mostly by me, </p>
+          <h3 id="Software/hardware_table"> Software and Hardware Tables </h3>
+          <p> Goober Ground Station (GGS), heavily relies on third party software and hardware. The following tables lists all software and hardware used in the ground station. </p>
+          <h4> Software </h4>
+          <table> <!-- software -->
+            <tr> <!-- collum titles -->
+              <th> Name </th>
+              <th> Link </th>
+              <th> Picture </th>
+              <th> Description </th>
+            </tr>
+            <tr>
+              <td> SDR++ </td> <!-- Name -->
+              <td> <a href="https://www.sdrpp.org">https://www.sdrpp.org</a> </td> <!-- Link -->
+              <td> <img class="img1" src="https://www.sdrpp.org/res/sdrpp.png"> </td> <!-- Picture -->
+              <td> SDR++ is a cross platform SDR software used for recording and listing to the audio, also used from replaying baseband files for things like SSTV. I all so use it on my RaspberryPi 5 as a server, so I can connect to the SDR over WiFi useing 'SDR++ Server' and 'RTL-TCP' (RTL SDR's only). </td> <!-- Description -->
+            </tr>
+            <tr>
+              <td> SDR# </td> <!-- Name -->
+              <td> <a href="https://airspy.com/download/">https://airspy.com/download/</a> </td> <!-- Link -->
+              <td> <img class="img1" src=""> </td> <!-- Picture -->
+              <td> SDR# is a SDR software similar to SDR++, but has downloadable plugins and many other built-in plugins. </td> <!-- Description -->
+            </tr>
+            <tr>
+              <td> SatDump </td> <!-- Name -->
+              <td> <a href="https://www.satdump.org/download/">https://www.satdump.org/download/</a> </td> <!-- Link -->
+              <td> <img class="img1" src="https://www.satdump.org/assets/icon.png"> </td> <!-- Picture -->
+              <td> Used for satellite decoding/recording; NOAA APT, NOAA DSB, METEOR M2-x LRPT 72k. Also be automated to record and track the satellites. </td> <!-- Description -->
+            </tr>
+            <tr>
+              <td> RX-SSTV </td> <!-- Name -->
+              <td> <a href="https://www.qsl.net/on6mu/rxsstv.htm">https://www.qsl.net/on6mu/rxsstv.htm</a> </td> <!-- Link -->
+              <td> <img class="img1" src="https://www.qsl.net/on6mu/media/rxsstv_scrn.jpg"> </td> <!-- Picture -->
+              <td> RX-SSTV is a program used for decoding <a href="https://en.wikipedia.org/wiki/Slow-scan_television">SSTV</a> over a virtual audio cable. </td> <!-- Description -->
+            </tr>
+            <tr>
+              <td> MMSSTV </td> <!-- Name -->
+              <td> <a href="https://hamsoft.ca/pages/mmsstv.php">https://hamsoft.ca/pages/mmsstv.php</a> </td> <!-- Link -->
+              <td> <img class="img1" src="https://hamsoft.ca/media/images/mmtty/mmtty_small.jpg"> </td> <!-- Picture -->
+              <td> MMSSTV is a program used for decoding <a href="https://en.wikipedia.org/wiki/Slow-scan_television">SSTV</a> over a virtual audio cable. </td> <!-- Description -->
+            </tr>
+            <tr>
+              <td> WSJT-X </td> <!-- Name -->
+              <td> <a href="https://wsjt.sourceforge.io/wsjtx.html">https://wsjt.sourceforge.io/wsjtx.html</a> </td> <!-- Link -->
+              <td> <img class="img1" src="https://wsjt.sourceforge.io/WSJTX_2.6.0-mini.png"> </td> <!-- Picture -->
+              <td> </td> <!-- Description -->
+            </tr>
+            <tr>
+              <td> VBCable driver </td> <!-- Name -->
+              <td> <a href="https://vb-audio.com/Cable/">https://vb-audio.com/Cable/</a> </td> <!-- Link -->
+              <td> <img class="img1" src="https://vb-audio.com/Cable/VBCable.jpg"> </td> <!-- Picture -->
+              <td> VBcable is a program used to take the audio from SDR++ and outputs it in a diffrent audio output, so i can use the output as an input to other programs that can decode things like <a href="https://en.wikipedia.org/wiki/Slow-scan_television">SSTV</a> or <a href="https://en.wikipedia.org/wiki/FT8">FT8</a>. </td> <!-- Description -->
+            </tr>
+            <tr>
+              <td> Orbitron </td> <!-- Name -->
+              <td> <a href="https://www.stoff.pl/downloads.php">https://www.stoff.pl/downloads.php</a> </td> <!-- Link -->
+              <td> <img class="img1" src="https://www.stoff.pl/gfx/orbitron.gif"> </td> <!-- Picture -->
+              <td> Orbitron is over 20 year old, but it still work just fine. Its used to track and the satellite passes over the station using <a href="https://en.wikipedia.org/wiki/Two-line_element_set"> TLE's</a> found at <a href="http://celestrak.org/">celestrak.org</a>. It also can be used to track the doppler shift of a signal and control a dish. (Im changeing over to Gpredict.) </td> <!-- Description -->
+            </tr>
+            <tr>
+              <td> Gpredict </td> <!-- Name -->
+              <td> <a href="https://oz9aec.dk/gpredict/download.php">https://oz9aec.dk/gpredict/download.php</a> </td> <!-- Link -->
+              <td> <img class="img1" src="data:image/jpeg;base64,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"> </td> <!-- Picture -->
+              <td> Similar to Orbitron, but is much newer and its used to predict the doppler shift and to tunne the radio to adjust for the doppler shift using a program to interface between SDR++ or SDR# to Gpredict. It also uses <a href="https://en.wikipedia.org/wiki/Two-line_element_set"> TLE's</a> found at <a href="http://celestrak.org/">celestrak.org</a>. </td> <!-- Description -->
+            </tr>
+            <tr>
+              <td> FUNcube Telemetry Dashboard </td> <!-- Name -->
+              <td> <a href="https://funcube.org.uk/wp-content/uploads/2019/11/funcube-dashboard-summary-v3.pdf">https://funcube.org.uk/wp-content/uploads/2019/11/funcube-dashboard-summary-v3.pdf</a> </td> <!-- Link -->
+              <td> <img class="img1" src="data:image/jpeg;base64,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"> </td> <!-- Picture -->
+              <td> Used to decod telemetry from satellites with the FUNcube payload on board. Note the Donwload link takes you to a pdf with links to all of the diffrent dashboards for each satellite. </td> <!-- Description -->
+            </tr>
+            <tr>
+              <td>  </td> <!-- Name -->
+              <td> <a href=""></a> </td> <!-- Link -->
+              <td> <img class="img1" src=""> </td> <!-- Picture -->
+              <td> </td> <!-- Description -->
+            </tr>
+          </table>
+          <h4> Hardware </h4>
+          <table> <!-- Hardware -->
+            <tr> <!-- collum titles -->
+              <th> Name </th>
+              <th> Link </th>
+              <th> Picture </th>
+              <th> Description </th>
+            </tr>
+            <tr>
+              <td> RTL-SDR BLOG V3 USB Dongle with Dipole Antenna Kit </td> <!-- Name -->
+              <td> <a href="https://core-electronics.com.au/rtl-sdr-blog-v3-usb-dongle-with-dipole-antenna-kit.html">https://core-electronics.com.au/rtl-sdr-blog-v3-usb-dongle-with-dipole-antenna-kit.html</a> </td> <!-- Link -->
+              <td> <img class="img1" src="https://core-electronics.com.au/media/catalog/product/cache/d5cf359726a1656c2b36f3682d3bbc67/W/R/WRL-22957-1.jpg"> </td> <!-- Picture -->
+              <td> The kit has a RTL-SDR BLOG V3 Dongle, 2 x 23cm to 1m telescopic antennas, 2 x 5cm to 13cm telescopic antennas, a Dipole Antenna Base with 60cm RG174, a 3 meter RG174 extension cable, a Flexible Tripod Mount and a Suction Cup Mount. </td> <!-- Description -->
+            </tr>
+            <tr>
+              <td> Nooelec SAWbird+ NOAA </td> <!-- Name -->
+              <td> <a href="https://www.nooelec.com/store/sdr/sdr-addons/sawbird/sawbird-plus-noaa-308.html">https://www.nooelec.com/store/sdr/sdr-addons/sawbird/sawbird-plus-noaa-308.html</a> </td> <!-- Link -->
+              <td> <img class="img1" src="https://www.nooelec.com/store/media/catalog/product/cache/1/image/458x/040ec09b1e35df139433887a97daa66f/1/0/100800_1b.png"> </td> <!-- Picture -->
+              <td> </td> <!-- Description -->
+            </tr>
+            <tr>
+              <td> Raspberry Pi 5 Model B 8GB </td> <!-- Name -->
+              <td> <a href="https://core-electronics.com.au/raspberry-pi-5-model-b-8gb.html">https://core-electronics.com.au/raspberry-pi-5-model-b-8gb.html</a> </td> <!-- Link -->
+              <td> <img class="img1" src="https://core-electronics.com.au/media/catalog/product/cache/d5cf359726a1656c2b36f3682d3bbc67/r/a/raspberry-pi-5-8gb-hero-v2.jpg"> </td> <!-- Picture -->
+              <td> </td> <!-- Description -->
+            </tr>
+            <tr>
+              <td> Raspberry Pi 5 Case, Red/White </td> <!-- Name -->
+              <td> <a href="https://core-electronics.com.au/raspberry-pi-5-case-red-white-official.html">https://core-electronics.com.au/raspberry-pi-5-case-red-white-official.html</a> </td> <!-- Link -->
+              <td> <img class="img1" src="https://core-electronics.com.au/media/catalog/product/cache/d5cf359726a1656c2b36f3682d3bbc67/r/a/raspberry-pi-5-official-case.jpg"> </td> <!-- Picture -->
+              <td> </td> <!-- Description -->
+            </tr>
+            <tr>
+              <td> Raspberry Pi 5 Active Cooler </td> <!-- Name -->
+              <td> <a href="https://core-electronics.com.au/raspberry-pi-5-active-cooler.html">https://core-electronics.com.au/raspberry-pi-5-active-cooler.html</a> </td> <!-- Link -->
+              <td> <img class="img1" src="https://core-electronics.com.au/media/catalog/product/cache/d5cf359726a1656c2b36f3682d3bbc67/r/a/raspberry-pi-5-active-cooler.jpg"> </td> <!-- Picture -->
+              <td> </td> <!-- Description -->
+            </tr>
+            <tr>
+              <td> Raspberry Pi 5 Black Power Supply (Official) USB-C PD 5.1V 27W </td> <!-- Name -->
+              <td> <a href="https://core-electronics.com.au/raspberry-pi-5-power-supply-usb-c-pd-27w-black.html">https://core-electronics.com.au/raspberry-pi-5-power-supply-usb-c-pd-27w-black.html</a> </td> <!-- Link -->
+              <td> <img class="img1" src="https://core-electronics.com.au/media/catalog/product/cache/d5cf359726a1656c2b36f3682d3bbc67/b/l/black-power-supply-logo-showcase.jpg"> </td> <!-- Picture -->
+              <td> </td> <!-- Description -->
+            </tr>
+            <tr>
+              <td> Raspberry Pi OS 32GB Preloaded uSD Card </td> <!-- Name -->
+              <td> <a href="https://core-electronics.com.au/32gb-microsd-card-with-noobs-for-all-raspberry-pi-boards.html">https://core-electronics.com.au/32gb-microsd-card-with-noobs-for-all-raspberry-pi-boards.html</a> </td> <!-- Link -->
+              <td> <img class="img1" src="https://core-electronics.com.au/media/catalog/product/cache/d5cf359726a1656c2b36f3682d3bbc67/r/a/raspberry-pi-microsd-cards-32gb_1.jpg"> </td> <!-- Picture -->
+              <td> </td> <!-- Description -->
+            </tr>
+            <tr>
+              <td> Micro-HDMI to Standard HDMI 1M Cable </td> <!-- Name -->
+              <td> <a href="https://core-electronics.com.au/raspberry-pi-micro-hdmi-to-standard-hdmi-1m-cable.html">https://core-electronics.com.au/raspberry-pi-micro-hdmi-to-standard-hdmi-1m-cable.html</a> </td> <!-- Link -->
+              <td> <img class="img1" src="https://core-electronics.com.au/media/catalog/product/cache/d5cf359726a1656c2b36f3682d3bbc67/u/n/untitled3_3_1.jpg"> </td> <!-- Picture -->
+              <td> </td> <!-- Description -->
+            </tr>
+          </table>
+            <h3 id="Hardware_specs">Hardware specs</h3>
+            <p> The following table hold the specs for all of the <i>radio</i> hardware used. </p>
+            <table>
+              <tr>
+                <th> </th>
+              </tr>
+              <tr>
+                <td> </td>
+              </tr>
+            </table>
+              <h3 id="Radio_spectrum">Radio spectrum used</h3>
+              <p> The following table shows all and radio bands that can be recived/transmitted on by my current equipment, useing the <a href="https://en.wikipedia.org/wiki/Radio_spectrum#IEEE">IEEE</a> and <a href="https://en.wikipedia.org/wiki/Radio_spectrum#ITU">ITU</a> nomenclature. </p>
+              <table>
+                <tr>
+                  <th> Receivable <a href="https://en.wikipedia.org/wiki/Radio_spectrum#ITU">ITU</a> Bands </th>
+                  <th> Transmittable  <a href="https://en.wikipedia.org/wiki/Radio_spectrum#ITU">ITU</a> Bands </th>
+                  <th> Receivable <a href="https://en.wikipedia.org/wiki/Radio_spectrum#IEEE">IEEE</a> Bands </th>
+                  <th> Transmittable  <a href="https://en.wikipedia.org/wiki/Radio_spectrum#IEEE">IEEE</a> Bands </th>
+                </tr>
+                <tr>
+                  <td class="Yes"> Medium frequency 300–3,000 kHz </td> <!-- Receivable ITU Bands -->
+                  <td class="No"> Medium frequency 300–3,000 kHz </td> <!-- Transmittable ITU Bands -->
+                  <td> N/A </td> <!-- Receivable IEEE Bands -->
+                  <td> N/A </td> <!-- Transmittable IEEE Bands -->
+                </tr>
+                <tr>
+                  <td class="Yes"> High frequency 3–30 MHz </td> <!-- Receivable ITU Bands -->
+                  <td class="No"> High frequency 3–30 MHz </td> <!-- Transmittable ITU Bands -->
+                  <td class="Yes"> High frequency 3–30 MHz </td> <!-- Receivable IEEE Bands -->
+                  <td class="No"> High frequency 3–30 MHz </td> <!-- Transmittable IEEE Bands -->
+                </tr>
+                <tr>
+                  <td class="Yes"> Very high frequency 30–300 MHz </td> <!-- Receivable ITU Bands -->
+                  <td class="No"> Very high frequency 30–300 MHz </td> <!-- Transmittable ITU Bands -->
+                  <td class="Yes"> Very high frequency 30–300 MHz </td> <!-- Receivable IEEE Bands -->
+                  <td class="No"> Very high frequency 30–300 MHz </td> <!-- Transmittable IEEE Bands -->
+                </tr>
+                <tr>
+                  <td class="Yes"> Ultra high frequency 300–3,000 MHz </td> <!-- Receivable ITU Bands -->
+                  <td class="Yes"> Ultra high frequency 300–3,000 MHz </td> <!-- Transmittable ITU Bands -->
+                  <td class="Yes"> Ultra high frequency 300-1000 MHz </td> <!-- Receivable IEEE Bands -->
+                  <td class="Yes"> Ultra high frequency 300-1000 MHz </td> <!-- Transmittable IEEE Bands -->
+                </tr>
+                <tr>
+                  <td class="Yes"> "" </td> <!-- Receivable ITU Bands -->
+                  <td class="Yes"> "" </td> <!-- Transmittable ITU Bands -->
+                  <td class="Yes"> L Band 1-2 Ghz </td> <!-- Receivable IEEE Bands -->
+                  <td class="No"> L Band 1-2 Ghz</td> <!-- Transmittable IEEE Bands -->
+                </tr>
+                <tr>
+                  <td class="Planning"> Super high frequency 3–30 GHz  </td> <!-- Receivable ITU Bands -->
+                  <td class="No"> Super high frequency 3–30 GHz  </td> <!-- Transmittable ITU Bands -->
+                  <td class="Planning"> S Band 2-4 GHz </td> <!-- Receivable IEEE Bands -->
+                  <td class="No"> S Band 2-4 GHz</td> <!-- Transmittable IEEE Bands -->
+                </tr>
+                <tr>
+                  <td class="Planning"> "" </td> <!-- Receivable ITU Bands -->
+                  <td class="No"> "" </td> <!-- Transmittable ITU Bands -->
+                  <td class="Planning"> C Band 4-8 GHz </td> <!-- Receivable IEEE Bands -->
+                  <td class="No"> C Band 4-8 GHz </td> <!-- Transmittable IEEE Bands -->
+                </tr>
+                <tr>
+                  <td class="Planning"> "" </td> <!-- Receivable ITU Bands -->
+                  <td class="No"> "" </td> <!-- Transmittable ITU Bands -->
+                  <td class="No"> X Band 8-12 GHz </td> <!-- Receivable IEEE Bands -->
+                  <td class="No"> X Band 8-12 GHz </td> <!-- Transmittable IEEE Bands -->
+                </tr>
+                <tr>
+                  <td class="Planning"> "" </td> <!-- Receivable ITU Bands -->
+                  <td class="No"> "" </td> <!-- Transmittable ITU Bands -->
+                  <td class="Planning"> Ku Band 12-18 GHz </td> <!-- Receivable IEEE Bands -->
+                  <td class="No"> Ku Band 12-18 GHz </td> <!-- Transmittable IEEE Bands -->
+                </tr>
+                <tr>
+                  <td class="Planning"> "" </td> <!-- Receivable ITU Bands -->
+                  <td class="No"> "" </td> <!-- Transmittable ITU Bands -->
+                  <td class="Planning"> K Band 18-27 GHz </td> <!-- Receivable IEEE Bands -->
+                  <td class="No"> K Band 18-27 GHz </td> <!-- Transmittable IEEE Bands -->
+                </tr>
+                <tr>
+                  <td class="Planning"> Extremely high frequency 	30–300 GHz </td> <!-- Receivable ITU Bands -->
+                  <td class="No"> Extremely high frequency 	30–300 GHz </td> <!-- Transmittable ITU Bands -->
+                  <td class="Planning"> Ka Band 27-40 GHz </td> <!-- Receivable IEEE Bands -->
+                  <td class="No"> Ka Band 27-40 GHz </td> <!-- Transmittable IEEE Bands -->
+                </tr>
+              </table>
+              <p> Heres a picture to better visualize the diffrent bands (This image is found on the <a href="https://en.wikipedia.org/wiki/Radio_spectrum">Radio Spectrum</a> Wikipedia page). </p>
+              <p> <img class="img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Frq_Band_Comparison.png/960px-Frq_Band_Comparison.png">  </p>
+              <table class="Key_table"> <!-- the legend or key to define what each color means -->
+                <tr> <!-- collum title -->
+                  <th> KEY </th>
+                </tr>
+                <tr> 
+                  <th> Yes/No/Planning </th>
+                </tr>
+                <tr>
+                  <td class="Yes"> Yes </td>
+                </tr>
+                <tr>
+                  <td class="No"> No </td>
+                </tr>
+                <tr>
+                  <td class="Planning"> Planning </td>
+                </tr>
+              </table>
+                <h3 id="Satellite_list">Satellites received / tracked / planning Table</h3>
+                <p> The following table lists all the satellites that have been tracked or receive and or planning on tracking/receiving signals, from GGS. A fair portion of info on some of these satellites is form <a href="https://nssdc.gsfc.nasa.gov/nmc/SpacecraftQuery.jsp">here</a>. </p>
+                <table> <!-- this table show what satellites I have recived/tracked or I am planing to recive/track -->
+                  <tr> <!-- collum titles -->
+                    <th> Satellite </th> 
+                    <th> Operator </th>
+                    <th> Status </th>
+                    <th> Received/Tracked </th>
+                    <th> Notes </th>
+                    <th> Discipline </th>
+                    <th> First observation </th>
+                  </tr>
+                  <tr>
+                    <td> <b> <a href="https://www.amsat.org/two-way-satellites/ao-7/"> AMSAT OSCAR-7 </a> (AO-7) </b> </td> <!-- Satellite -->
+                    <td> <a href="https://www.amsat.org/"> AMSAT (North America)</a> </td> <!-- Operator -->
+                    <td class="Operational_Limited"> Operational Limited </td> <!-- Status-->
+                    <td class="Yes"> Yes </td> <!-- Received/Tracked -->
+                    <td> Only transmittes in sun light, due a battery failure in mid-1981. Also one of the oldest working satellites in space. </td> <!-- Notes -->
+                    <td> Ameture radio </td> <!-- Discipline -->'
+                    <td> 12/02/2025 </td> <!-- First observation -->
+                  </tr>
+                  <tr>
+                    <td> <b> <a href="https://amsat-dl.org/en/amsat-phase-3-b-oscar-10/"> AMSAT OSCAR-10 </a> (AO-10) </b> </td> <!-- Satellite -->
+                    <td> <a href="https://amsat-dl.org/"> AMSAT (Germany)</a> </td> <!-- Operator -->
+                    <td class="Conflicting"> Conflicting Info </td> <!-- Status-->
+                    <td class="Planning"> Planning </td> <!-- Received/Tracked -->
+                    <td> There is contradicting information on the satellites status, and I'm also having a hard time finding historical documentation for this satellite. I'm hoping to at least see it visually. </td> <!-- Notes -->
+                    <td> Ameture radio </td> <!-- Discipline -->
+                    <td> N/A </td> <!-- First observation -->
+                  </tr>
+                  <tr>
+                    <td> <b> <a href="">AMSAT OSCAR-73</a> (AO-73) </b> </td> <!-- Satellite -->
+                    <td> <a href="https://amsat-uk.org/"> AMSAT (United Kingdom)</a> / <a href="https://amsat-nl.org/"> AMSAT (Netherlands)</a> </td> <!-- Operator -->
+                    <td class="Operational"> Operational </td> <!-- Status-->
+                    <td class="Yes"> Yes </td> <!-- Received/Tracked -->
+                    <td> </td> <!-- Notes -->
+                    <td> Ameture radio </td> <!-- Discipline -->
+                    <td> 26/07/2025</td> <!-- First observation -->
+                  </tr>
+                  <tr>
+                    <td> <b> <a href=""> Himawari-8</a>  </b> </td> <!-- Satellite -->
+                    <td> <a href=""> </a> </td> <!-- Operator -->
+                    <td class="Stowed"> In storage (Back up) </td> <!-- Status-->
+                    <td class="No"> No </td> <!-- Received/Tracked -->
+                    <td> </td> <!-- Notes -->
+                    <td> Meteorological/Earth science </td> <!-- Discipline -->
+                    <td> N/A </td> <!-- First observation -->
+                  </tr>
+                  <tr>
+                    <td> <b> <a href=""> Himawari-9</a>  </b> </td> <!-- Satellite -->
+                    <td> <a href=""> </a> </td> <!-- Operator -->
+                    <td class="Operational"> Operational </td> <!-- Status-->
+                    <td class="Planning"> Planning </td> <!-- Received/Tracked -->
+                    <td> </td> <!-- Notes -->
+                    <td> Meteorological/Earth science </td> <!-- Discipline -->
+                    <td> N/A </td> <!-- First observation -->
+                  </tr>
+                  <tr>
+                    <td> <b> <a href=""> Hubble Space Telescope</a>  </b> </td> <!-- Satellite -->
+                    <td> <a href=""> </a> </td> <!-- Operator -->
+                    <td class="Operational"> Operational </td> <!-- Status-->
+                    <td class="Planning"> Planning </td> <!-- Received/Tracked -->
+                    <td> </td> <!-- Notes -->
+                    <td> Astronomy </td> <!-- Discipline -->
+                    <td> N/A </td> <!-- First observation -->
+                  </tr>
+                  <tr>
+                    <td> <b> <a href="https://nssdc.gsfc.nasa.gov/nmc/spacecraft/display.action?id=1998-067A"> ISS</a> </b> </td> <!-- Satellite -->
+                    <td> <a href="https://www.nasa.gov/"> NASA</a> / <a href="https://www.roscosmos.ru/"> Roscosmos</a> / <a href="https://www.esa.int/"> ESA</a> / <a href="https://global.jaxa.jp/"> JAXA</a> / <a href="https://www.asc-csa.gc.ca/eng/"> CSA</a> </td> <!-- Operator -->
+                    <td class="Operational"> Operational </td> <!-- Status-->
+                    <td class="Yes"> Yes </td> <!-- Received/Tracked -->
+                    <td> The International Space Station, Its planned to deorbit in 2030. </td> <!-- Notes -->
+                    <td> International space laboratory </td> <!-- Discipline -->
+                    <td> 11/04/2025 </td> <!-- First observation -->
+                  </tr>
+                  <tr>
+                    <td> <b> <a href=""> James Webb Telescope </a>  </b> </td> <!-- Satellite -->
+                    <td> <a href=""> </a> </td> <!-- Operator -->
+                    <td class="Operational"> Operational </td> <!-- Status-->
+                    <td class="Planning"> Planning </td> <!-- Received/Tracked -->
+                    <td> </td> <!-- Notes -->
+                    <td> Astronomy </td> <!-- Discipline -->
+                    <td> N/A </td> <!-- First observation -->
+                  </tr>
+                  <tr>
+                    <td> <b> <a href="https://nssdc.gsfc.nasa.gov/nmc/spacecraft/display.action?id=2016-028A"> JCSAT-2B</a> (JCSAT-14) </b> </td> <!-- Satellite -->
+                    <td> <a href=""> </a> </td> <!-- Operator -->
+                    <td class="Operational"> Operational </td> <!-- Status-->
+                    <td class="Planning"> Planning </td> <!-- Received/Tracked -->
+                    <td> </td> <!-- Notes -->
+                    <td> Communication relay / Satellite communication </td> <!-- Discipline -->
+                    <td> N/A </td> <!-- First observation -->
+                  </tr>
+                  <tr>
+                    <td> <b> <a href="https://nssdc.gsfc.nasa.gov/nmc/spacecraft/display.action?id=1965-008C"> LES-1</a> (Lincoln Experimental Satellite 1) </b> </td> <!-- Satellite -->
+                    <td> <a href=""> </a> </td> <!-- Operator -->
+                    <td class="Derelict"> Derelict </td> <!-- Status-->
+                    <td class="Planning"> Planning </td> <!-- Received/Tracked -->
+                    <td> I know I have recorded this stellite but I must have deleted the recordings. </td> <!-- Notes -->
+                    <td> Military/Experimental communications satellite </td> <!-- Discipline -->
+                    <td> ??? </td> <!-- First observation -->
+                  </tr>
+                  <tr>
+                    <td> <b> <a href="https://nssdc.gsfc.nasa.gov/nmc/spacecraft/display.action?id=1967-066E"> LES-5</a> (Lincoln Experimental Satellite 5) </b> </td> <!-- Satellite -->
+                    <td> <a href=""> </a> </td> <!-- Operator -->
+                    <td class="Derelict"> Derelict </td> <!-- Status-->
+                    <td class="Planning"> Planning </td> <!-- Received/Tracked -->
+                    <td> </td> <!-- Notes -->
+                    <td> Military/Experimental geosynchronous communications satellite</td> <!-- Discipline -->
+                    <td> N/A </td> <!-- First observation -->
+                  </tr>
+                  <tr>
+                    <td> <b> <a href="https://nssdc.gsfc.nasa.gov/nmc/spacecraft/display.action?id=2023-091A"> METEOR-M N2-3</a> </b> </td> <!-- Satellite -->
+                    <td> <a href="https://www.roscosmos.ru/"> Roscosmos / <a href="https://meteoinfo.ru/en/"> ROSHYDROMET </td> <!-- Operator -->
+                    <td class="Operational"> Operational </td> <!-- Status-->
+                    <td class="Yes"> Yes </td> <!-- Received/Tracked -->
+                    <td> Its hard to find official info about this satellite. </td> <!-- Notes -->
+                    <td> Meteorological/Earth science </td> <!-- Discipline -->
+                    <td> 08/03/2025 </td> <!-- First observation -->
+                  </tr>
+                  <tr>
+                    <td> <b> <a href="https://nssdc.gsfc.nasa.gov/nmc/spacecraft/display.action?id=2024-039A"> METEOR-M N2-4</a> </b> </td> <!-- Satellite -->
+                    <td> <a href="https://www.roscosmos.ru/"> Roscosmos / <a href="https://meteoinfo.ru/en/"> ROSHYDROMET </a> </td> <!-- Operator -->
+                    <td class="Operational"> Operational </td> <!-- Status-->
+                    <td class="Yes"> Yes </td> <!-- Received/Tracked -->
+                    <td> Its hard to find official info about this satellite. </td> <!-- Notes -->
+                    <td> Meteorological/Earth science </td> <!-- Discipline -->
+                    <td> 08/03/2025 </td> <!-- First observation -->
+                  </tr>
+                  <tr>
+                    <td> <b> <a href="https://nssdc.gsfc.nasa.gov/nmc/spacecraft/display.action?id=2012-049A"> METOP-B</a>  </b> </td> <!-- Satellite -->
+                    <td> <a href=""> </a> </td> <!-- Operator -->
+                    <td class="Operational"> Operational </td> <!-- Status-->
+                    <td class="planning"> Planning </td> <!-- Received/Tracked -->
+                    <td> </td> <!-- Notes -->
+                    <td> Meteorological/Earth science </td> <!-- Discipline -->
+                    <td> N/A </td> <!-- First observation -->
+                  </tr><tr>
+                    <td> <b> <a href="https://nssdc.gsfc.nasa.gov/nmc/spacecraft/display.action?id=2018-087A"> METOP-C</a>  </b> </td> <!-- Satellite -->
+                    <td> <a href=""> </a> </td> <!-- Operator -->
+                    <td class="Operational"> Operational </td> <!-- Status-->
+                    <td class="Planning"> Planning </td> <!-- Received/Tracked -->
+                    <td> </td> <!-- Notes -->
+                    <td> Meteorological/Earth science </td> <!-- Discipline -->
+                    <td> N/A </td> <!-- First observation -->
+                  </tr>
+                  <tr>
+                    <td> <b> <a href="https://nssdc.gsfc.nasa.gov/nmc/spacecraft/display.action?id=1972-082A"> NOAA-2</a> (ITOS-D) </b> </td> <!-- Satellite -->
+                    <td> <a href="https://www.nasa.gov/"> NASA</a> / <a href="https://www.noaa.gov/"> NOAA</a> </td> <!-- Operator -->
+                    <td class="Derelict"> Derelict </td> <!-- Status-->
+                    <td class="Planning"> Planning </td> <!-- Received/Tracked -->
+                    <td> The satellite has started transmiting HRPT again on ~1697.5 MHz, It considered a "Zombie satellite" after it seemingly randomly started transmitting agian. The satellite only transmittes in sun light, Its also tumbling.  </td> <!-- Notes -->
+                    <td> Meteorological/Earth science </td> <!-- Discipline -->
+                    <td> N/A </td> <!-- First observation -->
+                  </tr>
+                  <tr>
+                    <td> <b> <a href="https://nssdc.gsfc.nasa.gov/nmc/spacecraft/display.action?id=1984-123A"> NOAA-9</a> (NOAA-F) </b> </td> <!-- Satellite -->
+                    <td> <a href="https://www.nasa.gov/"> NASA</a> / <a href="https://www.noaa.gov/"> NOAA</a> </td> <!-- Operator -->
+                    <td class="Derelict"> Derelict </td> <!-- Status-->
+                    <td class="Planning"> Planning </td> <!-- Received/Tracked -->
+                    <td> </td> <!-- Notes -->
+                    <td> Meteorological/Earth science </td> <!-- Discipline -->
+                    <td> N/A </td> <!-- First observation -->
+                  </tr>
+                  <tr>
+                    <td> <b> <a href="https://nssdc.gsfc.nasa.gov/nmc/spacecraft/display.action?id=1998-030A"> NOAA-15</a> (NOAA-K) </b> </td> <!-- Satellite -->
+                    <td> <a href="https://www.nasa.gov/">NASA</a> / <a href="https://www.noaa.gov/">NOAA</a> </td> <!-- Operator -->
+                    <td class="Operational_Degraded"> Operational Degraded </td> <!-- Status-->
+                    <td class="Yes"> Yes </td> <!-- Received/Tracked -->
+                    <td> NOAA is decommissioning the remaining POES satellites, NOAA-15 is going to shutdown on August 12, 2025 (Heres the <a href="https://www.ospo.noaa.gov/data/messages/2025/08/MSG_20250801_1305.html">notice</a> from <a href="https://www.ospo.noaa.gov/operations/messages.html">here</a>.). There is a petition to stop NOAA from shuting down these satellites but I think its too late and its unlikley to get enough signatures  to stop NOAA (Heres the <a href="https://www.change.org/p/urge-noaa-to-keep-noaa-15-and-19-satellites-operational?source_location=psf_petitions">petition</a>.). </td> <!-- Notes -->
+                    <td> Meteorological/Earth science </td> <!-- Discipline -->
+                    <td> 15/01/2025 </td> <!-- First observation -->
+                  </tr>
+                  <tr>
+                    <td> <b> <a href="https://nssdc.gsfc.nasa.gov/nmc/spacecraft/display.action?id=2005-018A"> NOAA-18</a> (NOAA-N) </b> </td> <!-- Satellite -->
+                    <td> <a href="https://www.nasa.gov/"> NASA</a> / <a href="https://www.noaa.gov/"> NOAA</a> </td> <!-- Operator -->
+                    <td class="Damaged"> Damaged (Shutdown) </td> <!-- Status-->
+                    <td class="Yes"> Yes </td> <!-- Received/Tracked -->
+                    <td> NOAA permanently shutdown NOAA-18 on June 6th 2025 at 17:33-17:49 UTC due to a failure in the S band transmitter, reducing to transmitter power output from 7W to 0.8W. Jeopardizing the satellites telemetry and NOAA's ability to control the satellite. </td> <!-- Notes -->
+                    <td> Meteorological/Earth science </td> <!-- Discipline -->
+                    <td> 15/01/2025 </td> <!-- First observation -->
+                  </tr>
+                  <tr>
+                    <td> <b> <a href="https://nssdc.gsfc.nasa.gov/nmc/spacecraft/display.action?id=2009-005A"> NOAA-19</a> (NOAA-N Prime) </b> </td> <!-- Satellite -->
+                    <td> <a href="https://www.nasa.gov/"> NASA</a> / <a href="https://www.noaa.gov/"> NOAA</a> </td> <!-- Operator -->
+                    <td class="Operational"> Operational </td> <!-- Status-->
+                    <td class="Yes"> Yes </td> <!-- Received/Tracked -->
+                    <td> NOAA is decommissioning the remaining POES satellites, NOAA-19 is going to shutdown on August 19, 2025 (Heres the <a href="https://www.ospo.noaa.gov/data/messages/2025/08/MSG_20250801_1305.html">notice</a> from <a href="https://www.ospo.noaa.gov/operations/messages.html">here</a>.). There is a petition to stop NOAA from shuting down these satellites but I think its too late and its unlikely to get enough signatures  to stop NOAA (Heres the <a href="https://www.change.org/p/urge-noaa-to-keep-noaa-15-and-19-satellites-operational?source_location=psf_petitions">petition</a>.). </td> <!-- Notes -->
+                    <td> Meteorological/Earth science </td> <!-- Discipline -->
+                    <td> 15/01/2025 </td> <!-- First observation -->
+                  </tr>
+                  <tr>
+                    <td> <b> <a href="https://nssdc.gsfc.nasa.gov/nmc/spacecraft/display.action?id=2017-073A"> NOAA-20</a> (JPSS-1) </b> </td> <!-- Satellite -->
+                    <td> <a href="https://www.nasa.gov/"> NASA</a> / <a href="https://www.noaa.gov/"> NOAA</a> </td> <!-- Operator -->
+                    <td class="Operational"> Operational </td> <!-- Status-->
+                    <td class="Planning"> Planning </td> <!-- Received/Tracked -->
+                    <td> </td> <!-- Notes -->
+                    <td> Meteorological/Earth science </td> <!-- Discipline -->
+                    <td> N/A </td> <!-- First observation -->
+                  </tr>
+                  <tr>
+                    <td> <b> <a href="https://nssdc.gsfc.nasa.gov/nmc/spacecraft/display.action?id=2022-150A"> NOAA-21</a> (JPSS-2) </b> </td> <!-- Satellite -->
+                    <td> <a href="https://www.nasa.gov/"> NASA</a> / <a href="https://www.noaa.gov/"> NOAA</a> </td> <!-- Operator -->
+                    <td class="Operational"> Operational </td> <!-- Status-->
+                    <td class="Planning"> Planning </td> <!-- Received/Tracked -->
+                    <td> </td> <!-- Notes -->
+                    <td> Meteorological/Earth science </td> <!-- Discipline -->
+                    <td> N/A </td> <!-- First observation -->
+                  </tr>
+                  <tr>
+                    <td> <b> <a href="https://rogue.space/missions/otp-2/"> OTP-2</a>  </b> </td> <!-- Satellite -->
+                    <td> <a href="https://rogue.space/"> Rogue Space Systems Corporation</a> </td> <!-- Operator -->
+                    <td class="Operational"> Operational </td> <!-- Status-->
+                    <td class="Yes"> Yes </td> <!-- Received/Tracked -->
+                    <td> The following audio is a recording of the Mode U - GFSK4k8 - AX.25 - Telemetry, recorded on the 28/07/2025. <audio src="Assets/projects/Goober-ground-station/KSP!.MP3" controls preload="none"></audio> Also the <a href="https://rogue.space/missions/otp-2/">here's</a> the satellites web page. </td> <!-- Notes -->
+                    <td> Technology demonstration </td> <!-- Discipline -->
+                    <td> 28/07/2025 </td> <!-- First observation -->
+                  </tr>
+                  <tr>
+                    <td> <b> <a href=""> SATGUS</a>  </b> </td> <!-- Satellite -->
+                    <td> <a href=""> </a> </td> <!-- Operator -->
+                    <td class="Operational"> Operational </td> <!-- Status-->
+                    <td class="Planning"> Plannig </td> <!-- Received/Tracked -->
+                    <td> </td> <!-- Notes -->
+                    <td> Technology demonstration/Public outreach payload </td> <!-- Discipline -->
+                    <td> N/A </td> <!-- First observation -->
+                  </tr>
+                  <tr>
+                    <td> <b> <a href="https://nssdc.gsfc.nasa.gov/nmc/spacecraft/display.action?id=1965-016D"> SOLRAD-7B</a> (GREB 6) </b> </td> <!-- Satellite -->
+                    <td> <a href=""> </a> </td> <!-- Operator -->
+                    <td class="Derelict"> Derelict </td> <!-- Status-->
+                    <td class="Yes"> Yes </td> <!-- Received/Tracked -->
+                    <td> </td> <!-- Notes -->
+                    <td> Scientific/Solar Observation </td> <!-- Discipline -->
+                    <td> 22/04/2025 </td> <!-- First observation -->
+                  </tr>
+                  <tr>
+                    <td> <b> <a href="https://en.wikipedia.org/wiki/Transit_(satellite)"> Transit 5B-5? or Transit 5E-5?</a>  </b> </td> <!-- Satellite -->
+                    <td> <a href=""> </a> </td> <!-- Operator -->
+                    <td class="Derelict"> Derelict </td> <!-- Status-->
+                    <td class="Yes"> Yes </td> <!-- Received/Tracked -->
+                    <td> </td> <!-- Notes -->
+                    <td> Navigation </td> <!-- Discipline -->
+                    <td> 23/03/2025 </td> <!-- First observation -->
+                  </tr>
+                  <tr>
+                    <td> <b> <a href=""> UMKA-1</a> (RS40S or УмКА-1) </b> </td> <!-- Satellite -->
+                    <td> <a href="https://school29.ru/"> Podolsk High School №29</a> </td> <!-- Operator -->
+                    <td class="Damaged"> Damaged </td> <!-- Status-->
+                    <td class="Yes"> Yes </td> <!-- Received/Tracked -->
+                    <td> </td> <!-- Notes -->
+                    <td> Educational/Astronomy </td> <!-- Discipline -->
+                    <td> 21/04/2025</td> <!-- First observation -->
+                  </tr>
+                  <tr>
+                    <td> <b> <a href=""> </a>  </b> </td> <!-- Satellite -->
+                    <td> <a href=""> </a> </td> <!-- Operator -->
+                    <td class=""> </td> <!-- Status-->
+                    <td class="">  </td> <!-- Received/Tracked -->
+                    <td> </td> <!-- Notes -->
+                    <td> </td> <!-- Discipline -->
+                    <td> </td> <!-- First observation -->
+                  </tr>
+                </table>
+                <table class="Key_table"> <!-- the legend or key to define what each color means -->
+                  <tr> <!-- collum title -->
+                    <th> KEY </th>
+                    <th> </th>
+                  </tr>
+                  <tr> 
+                    <th> Functionality </th>
+                    <th> Yes/No/Planning </th>
+                  </tr>
+                  <tr>
+                    <td class="Operational"> Operational </td>
+                    <td class="Yes"> Yes </td>
+                  </tr>
+                  <tr>
+                    <td class="Operational_Limited"> Operational Limited </td>
+                    <td class="No"> No </td>
+                  </tr>
+                  <tr>
+                    <td class="Operational_Degraded"> Operational Degraded</td>
+                    <td class="Planning"> Planning </td>
+                  </tr>
+                  <tr>
+                    <td class="Damaged"> Damaged </td>
+                    <td> </td>
+                  </tr>
+                  <tr>
+                    <td class="Nonoperational"> Nonoperational </td>
+                    <td> </td>
+                  </tr>
+                  <tr>
+                    <td class="Destroyed"> Destroyed </td>
+                    <td> </td>
+                  </tr>
+                  <tr>
+                    <td class="Functional_Off"> Functional Off </td>
+                    <td> </td>
+                  </tr>
+                  <tr>
+                    <td class="Stowed"> Stowed / In storage </td>
+                    <td> </td>
+                  </tr>
+                  <tr>
+                    <td class="Conflicting"> Conflicting Info </td>
+                    <td> </td>
+                  </tr>
+                  <tr>
+                    <td class="Derelict"> Derelict </td>
+                    <td> </td>
+                  </tr>
+                </table>
+                  <h3 id="Orbital_parameters"> Satellite orbital parameters </h3> <!-- sub titile -->
+                  <P> The following table contains some of the basic orbital parameters of satellites that I have received and are planning to receive data from each satellite. </P>
+                  <table> <!-- a table containing a whole bunch of data regarding the satellites i have and sitll are using -->
+                    <tr> <!-- collum titles -->
+                      <th> Satellite </th>
+                      <th> Orbit Type </th>
+                      <th> Orbital Status </th>
+                      <th> <a href="https://en.wikipedia.org/wiki/Orbital_eccentricity"> Eccentricity</a> </th>
+                      <th> <a href="https://en.wikipedia.org/wiki/Apsis"> Perigee altitude</a>(m) </th> <!-- the link takes the user to a wikipedia page on -->
+                      <th> <a href="https://en.wikipedia.org/wiki/Apsis"> Apogee altitude</a>(m) </th>
+                      <th> <a href="https://en.wikipedia.org/wiki/Orbital_inclination"> Inclination</a>(°) </th>
+                      <th> <a href="hhttps://en.wikipedia.org/wiki/Orbital_period"> Orbital Period</a>(minutes) </th>
+                      <th> <a href="https://en.wikipedia.org/wiki/Satellite_Catalog_Number"> NORAD Id</a> </th>
+                      <th> <a href="https://en.wikipedia.org/wiki/Two-line_element_set"> TLE</a> Link </th>
+                    </tr>
+                    <tr> 
+                      <td> <b> </b> </td> <!-- Satellite -->
+                      <td class=""> </td> <!-- Orbit type -->
+                      <td class=""> </td> <!-- Orbital Status -->
+                      <td> </td> <!--Eccentricity -->
+                      <td> Aprox. </td> <!-- Perigee -->
+                      <td> Aprox. </td> <!-- Apogee -->
+                      <td> </td> <!-- Inclination -->
+                      <td> Aprox. </td> <!-- Orbital period -->
+                      <td> </td> <!-- NORAD id -->
+                      <td> <a href=""> </a> </td> <!-- TLE link -->
+                    </tr>
+                    <tr> 
+                      <td> <b> </b> </td> <!-- Satellite -->
+                      <td class=""> </td> <!-- Orbit type -->
+                      <td class=""> </td> <!-- Orbital Status -->
+                      <td> </td> <!--Eccentricity -->
+                      <td> Aprox. </td> <!-- Perigee -->
+                      <td> Aprox. </td> <!-- Apogee -->
+                      <td> </td> <!-- Inclination -->
+                      <td> Aprox. </td> <!-- Orbital period -->
+                      <td> </td> <!-- NORAD id -->
+                      <td> <a href=""> </a> </td> <!-- TLE link -->
+                    </tr>
+                    <tr> 
+                      <td> <b> </b> </td> <!-- Satellite -->
+                      <td class=""> </td> <!-- Orbit type -->
+                      <td class=""> </td> <!-- Orbital Status -->
+                      <td> </td> <!--Eccentricity -->
+                      <td> Aprox. </td> <!-- Perigee -->
+                      <td> Aprox. </td> <!-- Apogee -->
+                      <td> </td> <!-- Inclination -->
+                      <td> Aprox. </td> <!-- Orbital period -->
+                      <td> </td> <!-- NORAD id -->
+                      <td> <a href=""> </a> </td> <!-- TLE link -->
+                    </tr>
+                    <tr> 
+                      <td> <b> </b> </td> <!-- Satellite -->
+                      <td class=""> </td> <!-- Orbit type -->
+                      <td class=""> </td> <!-- Orbital Status -->
+                      <td> </td> <!--Eccentricity -->
+                      <td> Aprox. </td> <!-- Perigee -->
+                      <td> Aprox. </td> <!-- Apogee -->
+                      <td> </td> <!-- Inclination -->
+                      <td> Aprox. </td> <!-- Orbital period -->
+                      <td> </td> <!-- NORAD id -->
+                      <td> <a href=""> </a> </td> <!-- TLE link -->
+                    </tr>
+                    <tr> 
+                      <td> <b> </b> </td> <!-- Satellite -->
+                      <td class=""> </td> <!-- Orbit type -->
+                      <td class=""> </td> <!-- Orbital Status -->
+                      <td> </td> <!--Eccentricity -->
+                      <td> Aprox. </td> <!-- Perigee -->
+                      <td> Aprox. </td> <!-- Apogee -->
+                      <td> </td> <!-- Inclination -->
+                      <td> Aprox. </td> <!-- Orbital period -->
+                      <td> </td> <!-- NORAD id -->
+                      <td> <a href=""> </a> </td> <!-- TLE link -->
+                    </tr>
+                    <tr> 
+                      <td> <b> </b> </td> <!-- Satellite -->
+                      <td class=""> </td> <!-- Orbit type -->
+                      <td class=""> </td> <!-- Orbital Status -->
+                      <td> </td> <!--Eccentricity -->
+                      <td> Aprox. </td> <!-- Perigee -->
+                      <td> Aprox. </td> <!-- Apogee -->
+                      <td> </td> <!-- Inclination -->
+                      <td> Aprox. </td> <!-- Orbital period -->
+                      <td> </td> <!-- NORAD id -->
+                      <td> <a href=""> </a> </td> <!-- TLE link -->
+                    </tr>
+                    <tr> 
+                      <td> <b> </b> </td> <!-- Satellite -->
+                      <td class=""> </td> <!-- Orbit type -->
+                      <td class=""> </td> <!-- Orbital Status -->
+                      <td> </td> <!--Eccentricity -->
+                      <td> Aprox. </td> <!-- Perigee -->
+                      <td> Aprox. </td> <!-- Apogee -->
+                      <td> </td> <!-- Inclination -->
+                      <td> Aprox. </td> <!-- Orbital period -->
+                      <td> </td> <!-- NORAD id -->
+                      <td> <a href=""> </a> </td> <!-- TLE link -->
+                    </tr>
+                    <tr> 
+                      <td> <b> </b> </td> <!-- Satellite -->
+                      <td class=""> </td> <!-- Orbit type -->
+                      <td class=""> </td> <!-- Orbital Status -->
+                      <td> </td> <!--Eccentricity -->
+                      <td> Aprox. </td> <!-- Perigee -->
+                      <td> Aprox. </td> <!-- Apogee -->
+                      <td> </td> <!-- Inclination -->
+                      <td> Aprox. </td> <!-- Orbital period -->
+                      <td> </td> <!-- NORAD id -->
+                      <td> <a href=""> </a> </td> <!-- TLE link -->
+                    </tr>
+                  </table>
+                  <table class="Key_table"> <!-- the legend or key to define what each color means -->
+                    <tr> <!-- collum title -->
+                      <th> KEY </th>
+                      <th> </th>
+                    </tr>
+                    <tr> 
+                      <th> Orbit Type </th>
+                      <th> Orbit Status </th>
+                    </tr>
+                    <tr>
+                      <td class="LEO"> <a href="https://en.wikipedia.org/wiki/Low_Earth_orbit"> Low Earth Orbit </a> ( 160 - 2,000 km ) </td>
+                      <td class="In_orbit"> In Orbit </td>
+                    </tr>
+                    <tr> 
+                      <td class="MEO"> <a href="https://en.wikipedia.org/wiki/Medium_Earth_orbit"> Medium Earth Orbit </a> ( 2,000 - 35,786 km ) </td>
+                      <td class="Ejected"> Ejected </td>
+                    </tr>
+                    <tr>
+                      <td class="GEO"> GEO-<a href="https://en.wikipedia.org/wiki/Geostationary_orbit"> stationary</a> / <a href="https://en.wikipedia.org/wiki/Geosynchronous_orbit">synchronous </a> ( 35,786 km ) </td> 
+                      <td class="Decayed"> Decayed </td>
+                    </tr>
+                    <tr>
+                      <td class="HEO"> <a href="https://en.wikipedia.org/wiki/High_Earth_orbit"> High Earth Orbit </a> ( over 35,786 km ) </td>
+                      <td class="Unknown"> Unknown </td>
+                    </tr>
+                  </table>
+                    <h3 id="Satellite_properties"> Satellite properties </h3> <!-- sub titile -->
+                      <h3 id="Glossary"> Glossary </h3>
+                        <h3 id="References"> References </h3>
+                        <p> <a href="https://www.cpc.ncep.noaa.gov/products/stratosphere/strat_a_f/NOAA-K.pdf"> https://www.cpc.ncep.noaa.gov/products/stratosphere/strat_a_f/NOAA-K.pdf</a> </p>
+                        <p> <a href="https://space.oscar.wmo.int/satellites/view/noaa_15"> https://space.oscar.wmo.int/satellites/view/noaa_15</a> </p>
+                        <p> <a href="https://space.oscar.wmo.int/satellites/view/noaa_18"> https://space.oscar.wmo.int/satellites/view/noaa_18</a> </p>
+                        <p> <a href="https://www.ospo.noaa.gov/operations/poes/status.html"> https://www.ospo.noaa.gov/operations/poes/status.html</a> </p>
+                        <p> <a href="http://celestrak.org/NORAD/elements/"> http://celestrak.org/NORAD/elements/</a> </p>
+                          <div> <!-- defines the box that the link is in -->
+                            <a href="Index.html">Home page</a> <!-- defines the link abck to the home page or 'index' -->
+                          </div>
+                                <footer> <!-- defines the footers info and links-->
+                                  <p> © 2025 Goober-site. This software is licensed under the MIT License. </p> 
+                                  <p> Report any issues to: My Discord 'gaumie_1', by email 'gooberwebsitereport@gmail.com' or the <a href="https://github.com/Goober-site/goober-website"> GitHub</a> page.</p> 
+                                  <p> Hosted using <a href="https://pages.github.com/">GitHub Pages</a> <img class="img3" src="Assets/github-mark-c791e9551fe4/github-mark/github-mark-white.png"> </p> 
+                                  <p> Disclaimer: I do not work for Github, GitHub is only hosting this website and its files. (I'm also using the GitHub Icons located <a href="https://github.com/logos">here</a>.)</p>
+                                </footer> 
+</html>
+<!-- Any comments are subject to spelling errors -->
+<!DOCTYPE html>
+<html lang="en">
+  <head> <!-- defines some meta data -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Goober-site</title> <!-- the website title (on the tab) -->
+    <link rel="stylesheet" href="Assets/style.css"> <!-- tells the html to pull the styles from the 'style.css' file -->
+  </head>
+  <body> <!-- defines evety thing you see on the page -->
+    <header> <p> . </p> </header> <!-- defines the banner at the top of the page -->
+    <h2> The Goober website </h2> <!-- the website title -->
+    <h1> STILL UNDER DEVELOPMENT </h1> <!-- very stil under development-->
     <div><p> Last updated: 03/08/2025 </p></div> <!-- When the last update to this page was -->
       <h3> Page contents: </h3>
       <p> 1. <a href="#Introduction">Introduction</a> </p> <!-- a link that take the user to the 'Introduction' paragraph -->
@@ -724,3 +1459,4 @@
                                   <p> Disclaimer: I do not work for Github, GitHub is only hosting this website and its files. (I'm also using the GitHub Icons located <a href="https://github.com/logos">here</a>.)</p>
                                 </footer> 
 </html>
+
