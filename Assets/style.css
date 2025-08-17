@@ -235,6 +235,10 @@ video {
     background-color: rgba(150, 50, 50, 0.6);
 }
 
+.Decommissioned { /* Defines the colors of the table to show if something has been 'Decommissioned' */
+    background-color: rgba(150, 50, 50, 0.6);
+}
+
 .Functional_Off { /* Defines the colors of the table to show if something is 'Functional_Off' */
     background-color: rgba(50, 50, 150, 0.6);
 }
