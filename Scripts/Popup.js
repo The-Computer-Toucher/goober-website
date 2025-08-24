@@ -1,0 +1,1 @@
+alert('This website was developed on and for PC, the website is best viewed on computers with a resolution of 1920*1080p or higher. ' + 'This website is still under development and is suject to chnage. ')
