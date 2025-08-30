@@ -232,15 +232,7 @@ video {
     background-color: rgba(150, 100, 50, 0.6);
 }
 
-.Nonoperational { /* Defines the colors of the table to show if something is 'Nonoperational' */
-    background-color: rgba(150, 50, 50, 0.6);
-}
-
 .Destroyed { /* Defines the colors of the table to show if something has been 'Destroyed' */
-    background-color: rgba(150, 50, 50, 0.6);
-}
-
-.Decommissioned { /* Defines the colors of the table to show if something has been 'Decommissioned' */
     background-color: rgba(150, 50, 50, 0.6);
 }
 
@@ -254,6 +246,13 @@ video {
 
 .Conflicting { /* Defines the colors of the table to show if something has 'Conflicting' info */
     background-color: rgba(200, 150, 150, 0.6);
+}
+
+
+
+/* The status of the satellites */
+.Decommissioned { /* Defines the colors of the table to show if something has been 'Decommissioned' */
+    background-color: rgba(150, 50, 50, 0.6);
 }
 
 .Derelict { /* Defines the colors of the table to show if something is 'Derelict' */
