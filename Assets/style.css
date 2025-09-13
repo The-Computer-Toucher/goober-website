@@ -261,12 +261,20 @@ video {
     background-color: rgba(150, 150, 50, 0.6);
 }
 
+.Decommissioned { /* Defines the colors of the table to show if something has been 'Decommissioned' */
+    background-color: rgba(150, 100, 50, 0.6);
+}
+
+.Emergency_decommission { /* Defines the colors of the table to show if something has been 'Emergency_decommission' */
+    background-color: rgba(150, 50, 50, 0.6);
+}
+
 .Failure { /* Defines the colors of the table to show if something has been a 'Failure' */
     background-color: rgba(150, 50, 50, 0.6);
 }
 
-.Decommissioned { /* Defines the colors of the table to show if something has been 'Decommissioned' */
-    background-color: rgba(150, 50, 50, 0.6);
+.Backup { /* Defines the colors of the table to show if something is a 'Backup' */
+    background-color: rgba(50, 50, 150, 0.6);
 }
 
 .Derelict { /* Defines the colors of the table to show if something is 'Derelict' */
