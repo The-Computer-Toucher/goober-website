@@ -249,6 +249,10 @@ video {
     background-color: rgba(200, 150, 150, 0.6);
 }
 
+.Unknown { /* Defines the colors of the table to show if something has 'Unknown' info */
+    background-color: rgba(150, 50, 150, 0.6);
+}
+
 
 
 /* The status of the satellites */
