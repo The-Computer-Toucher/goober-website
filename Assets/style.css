@@ -144,9 +144,13 @@ video {
 
 
 
-/* Yes or no questions (ao 'Planning')*/
+/* Yes or no questions (also as or 'Planning')*/
 .Yes { /* Defines the color that indicates 'Yes' on a table */
     background-color: rgba(50, 150, 50, 0.6);
+}
+
+.Investigating { /* Defines the color that indicates that it being'investigated' on a table */
+    background-color: rgba(150, 150, 50, 0.6);
 }
 
 .No { /* Defines the color that indicates 'No' on a table */
