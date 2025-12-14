@@ -116,24 +116,6 @@ tr:nth-child(even) { /* Defines the... I dont really know what this does, just t
     height: 80px;
 }
 
-.img2 { /* Changes the size of a picture */
-    width: auto;
-    height: 120px;
-}
-
-.img3 { /* Changes the size of a picture */
-    width: auto;
-    height: 10px;
-}
-
-.img4 { /* Changes the size of a picture */
-    display: block;
-    width: 100%;
-    height: auto;
-    margin-left: auto;
-    margin-right: auto;
-}
-
 video {
     display: block;
     width: auto;
