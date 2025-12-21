@@ -268,6 +268,11 @@ video {
     background-color: rgba(50, 50, 150, 0.6);
 }
 
+.Complete { /* Defines the colors of the table to show if something is a 'Complete' */
+    background-color: rgba(50, 50, 150, 0.6);
+}
+
 .Derelict { /* Defines the colors of the table to show if something is 'Derelict' */
     background-color: rgba(100, 100, 100, 0.6);
 }
+
