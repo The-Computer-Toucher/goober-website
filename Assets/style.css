@@ -15,7 +15,7 @@ div { /* This is used to make the error boxes as seen on the 404 page, also used
     border: 2px solid rgb(19, 85, 146);
     margin: auto;
     height: auto;
-    background-color: rgba(150, 150, 0, 1);
+    background-color: rgba(0, 75, 75, 1);
 }
 
 h1 { /* Used for error mesages as shown on the 404 page, and its also used for the 'STILL UNDER DEVELOPMENT' text */
@@ -114,6 +114,16 @@ tr:nth-child(even) { /* Defines the... I dont really know what this does, just t
 .img1 { /* Changes the size of a picture */
     width: 80px;
     height: 80px;
+}
+
+.img2 { /* Changes the size of a picture */
+    width: 80px;
+    height: 80px;
+}
+
+.img3 { /* Changes the size of a picture */
+    width: 12px;
+    height: 12px;
 }
 
 video {
