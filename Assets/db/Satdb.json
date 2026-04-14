@@ -2,9 +2,10 @@
     {
         "Entry_ID": 0,
         "NORAD_ID": 0,
-        "COSPAR_ID": "-",
+        "COSPAR_ID": "0000-000A",
 
         "Satellite_Name": "-",
+        "Satellite_alternative_Name": "-",
         "Satellite_Image_URL": "-",
         "Satellite_Type": "-",
         "Satellite_Orbit_Type": "-",
