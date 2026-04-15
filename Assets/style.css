@@ -99,29 +99,28 @@ th { /* Table headings (the headings at the top of each collum) */
   color:gray;
 }
 
+.search_box { /* Used to define the tables on any givin page */
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 12%;
+  padding: 8px;
+  margin-bottom: 10px;
+  font-family: sans-serif;
+  text-align: center;
+  /* font-size: 12px; */
+}
+
 tr:nth-child(even) { /* Defines the... I dont really know what this does, just that its somthing to do with the tables */
   background-color: rgba(0, 0, 10, 0.9);
-}s
-
-.img { /* Changes the size of a picture */
-    display: block;
-    width: 50%;
-    height: auto;
-    margin-left: auto;
-    margin-right: auto;
 }
 
-.img1 { /* Changes the size of a picture */
-    width: 80px;
+.table_img { /* Changes the size of a picture */
+    width: auto;
     height: 80px;
 }
 
-.img2 { /* Changes the size of a picture */
-    width: 80px;
-    height: 80px;
-}
-
-.img3 { /* Changes the size of a picture */
+.small_icon { /* Changes the size of a picture */
     width: 12px;
     height: 12px;
 }
@@ -282,7 +281,7 @@ video {
     background-color: rgba(50, 50, 150, 0.6);
 }
 
-.Derelict { /* Defines the colors of the table to show if something is 'Derelict' */
+.Defunct { /* Defines the colors of the table to show if something is 'Defunct' */
     background-color: rgba(100, 100, 100, 0.6);
 }
 
