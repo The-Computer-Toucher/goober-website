@@ -34,8 +34,8 @@ function displayData(data) {
             <td>${sat.Satellite_Launch_Vehicle_Name}</td>
             <td> <img class="table_img" src="${sat.Satellite_Launch_Image_URL}"> </td>
 
-            <td>${sat.Satellite_Mission_Status}</td>
-            <td>${sat.Satellite_Functionality_Status}</td>
+            <td class="${sat.Satellite_Mission_Status}">${sat.Satellite_Mission_Status}</td>
+            <td class="${sat.Satellite_Functionality_Status}">${sat.Satellite_Functionality_Status}</td>
 
             <td>${sat.Satellite_Notes}</td>
             <td>${sat.Satellite_Tracked}</td>
