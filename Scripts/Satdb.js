@@ -1,14 +1,14 @@
 let satellites = [];
 
 // fetch data
-fetch("Assets/db/Satdb.json")
+fetch("Assets/db/Satdb.json") // the file path to the database 
 .then(res => res.json())
 .then(sat_data => {
     satellites = sat_data;
-    console.log(satellites);
+    console.log(satellites); // logs all the data from the database into the console 
     displayData(satellites);
 })
-.catch(err => console.error(err));
+.catch(err => console.error(err)); // logs errors in the console
 
 
 // this function displays the data into the table
@@ -28,6 +28,7 @@ function displayData(data) {
             <td> <img class="table_img" src="${sat.Satellite_Image_URL}"> </td>
             <td>${sat.Satellite_Type}</td>
             <td>${sat.Satellite_Orbit_Type}</td>
+            <td class="${sat.Satellite_Orbit_Status}">${sat.Satellite_Orbit_Status}</td>
             <td>${sat.Satellite_Manufacturer}</td>
             <td>${sat.Satellite_Operator}</td>
 
@@ -39,10 +40,10 @@ function displayData(data) {
             <td class="${sat.Satellite_Functionality_Status}">${sat.Satellite_Functionality_Status}</td>
 
             <td>${sat.Satellite_Notes}</td>
-            <td>${sat.Satellite_Tracked}</td>
+            <td class="${sat.Satellite_Tracked}">${sat.Satellite_Tracked}</td>
             <td>${sat.Satellite_First_Observation_Date}</td>
         </tr>
-        `;
+        `; // this html for those who are wondering
     }
 
     placeholder.innerHTML = out;
@@ -62,6 +63,7 @@ document.querySelector("#search-input").addEventListener("input", function () {
         ${sat.Satellite_alternative_Name}
         ${sat.Satellite_Type}
         ${sat.Satellite_Orbit_Type}
+        ${sat.Satellite_Orbit_Status}
         ${sat.Satellite_Manufacturer}
         ${sat.Satellite_Operator}
 
