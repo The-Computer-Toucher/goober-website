@@ -28,6 +28,7 @@ function displayData(data) {
             <td> <img class="table_img" src="${sat.Satellite_Image_URL}"> </td>
             <td>${sat.Satellite_Type}</td>
             <td>${sat.Satellite_Orbit_Type}</td>
+            <td>${sat.Satellite_Manufacturer}</td>
             <td>${sat.Satellite_Operator}</td>
 
             <td>${sat.Satellite_Launch_Date}</td>
@@ -53,24 +54,25 @@ document.querySelector("#search-input").addEventListener("input", function () {
 
     let filtered = satellites.filter(sat => {
     let combined = `
-        ${sat.Entry_ID}</td>
-        ${sat.NORAD_ID}</td>
-        ${sat.COSPAR_ID}</td>
+        ${sat.Entry_ID}
+        ${sat.NORAD_ID}
+        ${sat.COSPAR_ID}
 
-        ${sat.Satellite_Name}</td>
-        ${sat.Satellite_alternative_Name}</td>
-        ${sat.Satellite_Type}</td>
-        ${sat.Satellite_Orbit_Type}</td>
-        ${sat.Satellite_Operator}</td>
+        ${sat.Satellite_Name}
+        ${sat.Satellite_alternative_Name}
+        ${sat.Satellite_Type}
+        ${sat.Satellite_Orbit_Type}
+        ${sat.Satellite_Manufacturer}
+        ${sat.Satellite_Operator}
 
-        ${sat.Satellite_Launch_Date}</td>
-        ${sat.Satellite_Launch_Vehicle_Name}</td>
+        ${sat.Satellite_Launch_Date}
+        ${sat.Satellite_Launch_Vehicle_Name}
 
-        ${sat.Satellite_Mission_Status}</td>
-        ${sat.Satellite_Functionality_Status}</td>
+        ${sat.Satellite_Mission_Status}
+        ${sat.Satellite_Functionality_Status}
 
-        ${sat.Satellite_Tracked}</td>
-        ${sat.Satellite_First_Observation_Date}</td>
+        ${sat.Satellite_Tracked}
+        ${sat.Satellite_First_Observation_Date}
     `.toLowerCase();
 
     return combined.includes(searchValue);
