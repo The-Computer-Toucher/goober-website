@@ -172,56 +172,17 @@ video {
 }
 
 
-
-/* The 'Orbit_Type' */
-.LEO { /* Defines the color for each orbit type, in this case it for a low Earth orbit */
-    background-color: rgba(0, 0, 150, 0.8);
-}
-
-.MEO { /* Defines the color for each orbit type, in this case it for a medium Earth orbit */
-    background-color: rgba(0, 0, 100, 0.7);
-}
-
-.GEO { /* Defines the color for each orbit type, in this case it for a geo-stationary/geo-synchronous Earth orbit */
-    background-color: rgba(0, 0, 75, 0.65);
-}
-
-.HEO { /* Defines the color for each orbit type, in this case it for a high Earth orbit */
-    background-color: rgba(0, 0, 50, 0.5);
-}
-
-
-
-/* The project status */
-.planning { /* Defines the color that indicates that im 'Planning' on doing some thing, on a table */
-    background-color: rgba(50, 50, 150, 0.6);
-} 
-
-.active { /* Defines the color of the project table on the 'Index.html' page to 'active' */
-    background-color: rgba(50, 150, 50, 0.6);
-}
-
-.moderately_active { /* Defines the color of the project table on the 'Index.html' page to 'inactive' */
-    background-color: rgba(150, 150, 50, 0.6);
-}
-
-.inactive { /* Defines the color of the project table on the 'Index.html' page to 'inactive' */
-    background-color: rgba(150, 50, 50, 0.6);
-}
-
-
-
 /* The status of the satellites */
 .Operational { /* Defines the color of the table to show if something is 'Operational' */
     background-color: rgba(50, 150, 50, 0.6);
 }
 
-.Operational_Limited { /* Defines the colors of the table to show if something is 'Operational_Limited' */
+.Operational-Limited { /* Defines the colors of the table to show if something is 'Operational_Limited' */
 
     background-color: rgba(150, 150, 50, 0.6);
 }
 
-.Operational_Degraded { /* Defines the colors of the table to show if something is 'Operational_Degraded' */
+.Operational-Degraded { /* Defines the colors of the table to show if something is 'Operational_Degraded' */
     background-color: rgba(150, 100, 50, 0.6);
 }
 
@@ -233,7 +194,7 @@ video {
     background-color: rgba(150, 50, 50, 0.6);
 }
 
-.Functional_Off { /* Defines the colors of the table to show if something is 'Functional_Off' */
+.Functional-Off { /* Defines the colors of the table to show if something is 'Functional_Off' */
     background-color: rgba(50, 50, 150, 0.6);
 }
 
@@ -256,7 +217,7 @@ video {
     background-color: rgba(50, 150, 50, 0.6);
 }
 
-.Partially_active { /* Defines the colors of the table to show if something is 'Partially_active' */
+.Partially-active { /* Defines the colors of the table to show if something is 'Partially_active' */
 
     background-color: rgba(150, 150, 50, 0.6);
 }
@@ -265,7 +226,7 @@ video {
     background-color: rgba(150, 100, 50, 0.6);
 }
 
-.Emergency_decommission { /* Defines the colors of the table to show if something has been 'Emergency_decommission' */
+.Emergency-decommission { /* Defines the colors of the table to show if something has been 'Emergency_decommission' */
     background-color: rgba(150, 50, 50, 0.6);
 }
 
