@@ -155,7 +155,7 @@ video {
 
 
 /* The 'Orbital_Status' */
-.In_orbit {
+.In-orbit {
     background-color: rgba(50, 150, 50, 0.6); /* Defines the color for the 'Orbital_Status', for 'In_Orbit' */
 }
 
