@@ -344,13 +344,13 @@
         "COSPAR_ID": "1974-089B",
 
         "Satellite_Name": "AO-7",
-        "Satellite_alternative_Name": "AMSAT-OSCAR 7",
+        "Satellite_alternative_Name": "AMSAT-OSCAR 7, Phase 2-B",
         "Satellite_Image_URL": "http://www.amsat.org/wordpress/wp-content/uploads/2013/07/ao-7.gif",
         "Satellite_Type": "Ameture radio",
         "Satellite_Orbit_Type": "Polar LEO",
         "Satellite_Orbit_Status": "In-Orbit",
         "Satellite_Manufacturer": "AMSAT",
-        "Satellite_Operator": "AMSAT",
+        "Satellite_Operator": "AMSAT-NA",
 
         "Satellite_Launch_Date": "15/11/1974",
         "Satellite_Launch_Vehicle_Name": "Delta 2310",
@@ -361,7 +361,7 @@
         
         "Satellite_Notes": "Only transmittes in sun light, due a battery failure in mid-1981. Also one of the oldest working satellites in space. Piggybacked with ITOS-G (NOAA 4) and the Spanish INTASAT. The laucnh image is an uncomfirmed launch image, but is the same rocket used.",
         "Satellite_Tracked": "Yes",
-        "Satellite_First_Observation_Date": "12/02/2025",
+        "Satellite_First_Observation_Date": "12/02/2025 (radiometrically)",
 
         "0_Uplink/Downlink_Name": "",
         "0_Uplink/Downlink_Service": "",
@@ -462,17 +462,356 @@
         "Satellite_Type": "Ameture radio",
         "Satellite_Orbit_Type": "Highly elliptical HEO",
         "Satellite_Orbit_Status": "In-Orbit",
-        "Satellite_Manufacturer": "AMSAT-DL",
+        "Satellite_Manufacturer": "AMSAT-DL, AMSAT-NA",
         "Satellite_Operator": "AMSAT",
 
         "Satellite_Launch_Date": "16/06/1983",
+        "Satellite_Launch_Vehicle_Name": "Ariane 1",
+        "Satellite_Launch_Image_URL": "https://www.esa.int/var/esa/storage/images/esa_multimedia/images/2007/07/ecs-1_lifts_off_aboard_an_ariane_1/9754431-3-eng-GB/ECS-1_lifts_off_aboard_an_Ariane_1_pillars.jpg",
+        
+        "Satellite_Mission_Status": "Defunct",
+        "Satellite_Functionality_Status": "Operational-Degraded",
+        
+        "Satellite_Notes": "Still transmits acording to the AMSAT-DL web page for AO-10, it was launch with ECS-1.",
+        "Satellite_Tracked": "Planning",
+        "Satellite_First_Observation_Date": "16/08/2025 (optically)",
+
+        "0_Uplink/Downlink_Name": "",
+        "0_Uplink/Downlink_Service": "",
+        "0_Uplink/Downlink_Status": "",
+        "0_Uplink/Downlink_Frequency(MHz)": 0,
+        "0_Uplink/Downlink_Bandwidth(kHz)": 0,
+        "0_Uplink/Downlink_Polarization": "",
+        "0_Uplink/Downlink_ERP(W)": 0,
+
+        "1_Uplink/Downlink_Name": "",
+        "1_Uplink/Downlink_Service": "",
+        "1_Uplink/Downlink_Status": "",
+        "1_Uplink/Downlink_Frequency(MHz)": 0,
+        "1_Uplink/Downlink_Bandwidth(kHz)": 0,
+        "1_Uplink/Downlink_Polarization": "",
+        "1_Uplink/Downlink_ERP(W)": 0,
+
+        "2_Uplink/Downlink_Name": "",
+        "2_Uplink/Downlink_Service": "",
+        "2_Uplink/Downlink_Status": "",
+        "2_Uplink/Downlink_Frequency(MHz)": 0,
+        "2_Uplink/Downlink_Bandwidth(kHz)": 0,
+        "2_Uplink/Downlink_Polarization": "",
+        "2_Uplink/Downlink_ERP(W)": 0,
+
+        "3_Uplink/Downlink_Name": "",
+        "3_Uplink/Downlink_Service": "",
+        "3_Uplink/Downlink_Status": "",
+        "3_Uplink/Downlink_Frequency(MHz)": 0,
+        "3_Uplink/Downlink_Bandwidth(kHz)": 0,
+        "3_Uplink/Downlink_Polarization": "",
+        "3_Uplink/Downlink_ERP(W)": 0,
+
+        "4_Uplink/Downlink_Name": "",
+        "4_Uplink/Downlink_Service": "",
+        "4_Uplink/Downlink_Status": "",
+        "4_Uplink/Downlink_Frequency(MHz)": 0,
+        "4_Uplink/Downlink_Bandwidth(kHz)": 0,
+        "4_Uplink/Downlink_Polarization": "",
+        "4_Uplink/Downlink_ERP(W)": 0,
+
+        "5_Uplink/Downlink_Name": "",
+        "5_Uplink/Downlink_Service": "",
+        "5_Uplink/Downlink_Status": "",
+        "5_Uplink/Downlink_Frequency(MHz)": 0,
+        "5_Uplink/Downlink_Bandwidth(kHz)": 0,
+        "5_Uplink/Downlink_Polarization": "",
+        "5_Uplink/Downlink_ERP(W)": 0,
+
+        "6_Uplink/Downlink_Name": "",
+        "6_Uplink/Downlink_Service": "",
+        "6_Uplink/Downlink_Status": "",
+        "6_Uplink/Downlink_Frequency(MHz)": 0,
+        "6_Uplink/Downlink_Bandwidth(kHz)": 0,
+        "6_Uplink/Downlink_Polarization": "",
+        "6_Uplink/Downlink_ERP(W)": 0,
+
+        "7_Uplink/Downlink_Name": "",
+        "7_Uplink/Downlink_Service": "",
+        "7_Uplink/Downlink_Status": "",
+        "7_Uplink/Downlink_Frequency(MHz)": 0,
+        "7_Uplink/Downlink_Bandwidth(kHz)": 0,
+        "7_Uplink/Downlink_Polarization": "",
+        "7_Uplink/Downlink_ERP(W)": 0,
+
+        "8_Uplink/Downlink_Name": "",
+        "8_Uplink/Downlink_Service": "",
+        "8_Uplink/Downlink_Status": "",
+        "8_Uplink/Downlink_Frequency(MHz)": 0,
+        "8_Uplink/Downlink_Bandwidth(kHz)": 0,
+        "8_Uplink/Downlink_Polarization": "",
+        "8_Uplink/Downlink_ERP(W)": 0,
+
+        "9_Uplink/Downlink_Name": "",
+        "9_Uplink/Downlink_Service": "",
+        "9_Uplink/Downlink_Status": "",
+        "9_Uplink/Downlink_Frequency(MHz)": 0,
+        "9_Uplink/Downlink_Bandwidth(kHz)": 0,
+        "9_Uplink/Downlink_Polarization": "",
+        "9_Uplink/Downlink_ERP(W)": 0,
+
+        "10_Uplink/Downlink_Name": "",
+        "10_Uplink/Downlink_Service": "",
+        "10_Uplink/Downlink_Status": "",
+        "10_Uplink/Downlink_Frequency(MHz)": 0,
+        "10_Uplink/Downlink_Bandwidth(kHz)": 0,
+        "10_Uplink/Downlink_Polarization": "",
+        "10_Uplink/Downlink_ERP(W)": 0
+    },
+    {
+        "Entry_ID": 5,
+        "NORAD_ID": 22825,
+        "COSPAR_ID": "1993-061C",
+
+        "Satellite_Name": "AO-27",
+        "Satellite_alternative_Name": "AMSAT-OSCAR 27, EYESAT-1",
+        "Satellite_Image_URL": "https://space.skyrocket.de/img_sat/eyesat-1__1.jpg",
+        "Satellite_Type": "Ameture radio",
+        "Satellite_Orbit_Type": "SSO LEO",
+        "Satellite_Orbit_Status": "In-Orbit",
+        "Satellite_Manufacturer": "Interferometrics",
+        "Satellite_Operator": "AMRAD",
+
+        "Satellite_Launch_Date": "26/09/1993",
+        "Satellite_Launch_Vehicle_Name": "Ariane-40",
+        "Satellite_Launch_Image_URL": "-",
+        
+        "Satellite_Mission_Status": "Partially-active",
+        "Satellite_Functionality_Status": "Operational-Degraded",
+        
+        "Satellite_Notes": "",
+        "Satellite_Tracked": "No",
+        "Satellite_First_Observation_Date": "00/00/0000",
+
+        "0_Uplink/Downlink_Name": "",
+        "0_Uplink/Downlink_Service": "",
+        "0_Uplink/Downlink_Status": "",
+        "0_Uplink/Downlink_Frequency(MHz)": 0,
+        "0_Uplink/Downlink_Bandwidth(kHz)": 0,
+        "0_Uplink/Downlink_Polarization": "",
+        "0_Uplink/Downlink_ERP(W)": 0,
+
+        "1_Uplink/Downlink_Name": "",
+        "1_Uplink/Downlink_Service": "",
+        "1_Uplink/Downlink_Status": "",
+        "1_Uplink/Downlink_Frequency(MHz)": 0,
+        "1_Uplink/Downlink_Bandwidth(kHz)": 0,
+        "1_Uplink/Downlink_Polarization": "",
+        "1_Uplink/Downlink_ERP(W)": 0,
+
+        "2_Uplink/Downlink_Name": "",
+        "2_Uplink/Downlink_Service": "",
+        "2_Uplink/Downlink_Status": "",
+        "2_Uplink/Downlink_Frequency(MHz)": 0,
+        "2_Uplink/Downlink_Bandwidth(kHz)": 0,
+        "2_Uplink/Downlink_Polarization": "",
+        "2_Uplink/Downlink_ERP(W)": 0,
+
+        "3_Uplink/Downlink_Name": "",
+        "3_Uplink/Downlink_Service": "",
+        "3_Uplink/Downlink_Status": "",
+        "3_Uplink/Downlink_Frequency(MHz)": 0,
+        "3_Uplink/Downlink_Bandwidth(kHz)": 0,
+        "3_Uplink/Downlink_Polarization": "",
+        "3_Uplink/Downlink_ERP(W)": 0,
+
+        "4_Uplink/Downlink_Name": "",
+        "4_Uplink/Downlink_Service": "",
+        "4_Uplink/Downlink_Status": "",
+        "4_Uplink/Downlink_Frequency(MHz)": 0,
+        "4_Uplink/Downlink_Bandwidth(kHz)": 0,
+        "4_Uplink/Downlink_Polarization": "",
+        "4_Uplink/Downlink_ERP(W)": 0,
+
+        "5_Uplink/Downlink_Name": "",
+        "5_Uplink/Downlink_Service": "",
+        "5_Uplink/Downlink_Status": "",
+        "5_Uplink/Downlink_Frequency(MHz)": 0,
+        "5_Uplink/Downlink_Bandwidth(kHz)": 0,
+        "5_Uplink/Downlink_Polarization": "",
+        "5_Uplink/Downlink_ERP(W)": 0,
+
+        "6_Uplink/Downlink_Name": "",
+        "6_Uplink/Downlink_Service": "",
+        "6_Uplink/Downlink_Status": "",
+        "6_Uplink/Downlink_Frequency(MHz)": 0,
+        "6_Uplink/Downlink_Bandwidth(kHz)": 0,
+        "6_Uplink/Downlink_Polarization": "",
+        "6_Uplink/Downlink_ERP(W)": 0,
+
+        "7_Uplink/Downlink_Name": "",
+        "7_Uplink/Downlink_Service": "",
+        "7_Uplink/Downlink_Status": "",
+        "7_Uplink/Downlink_Frequency(MHz)": 0,
+        "7_Uplink/Downlink_Bandwidth(kHz)": 0,
+        "7_Uplink/Downlink_Polarization": "",
+        "7_Uplink/Downlink_ERP(W)": 0,
+
+        "8_Uplink/Downlink_Name": "",
+        "8_Uplink/Downlink_Service": "",
+        "8_Uplink/Downlink_Status": "",
+        "8_Uplink/Downlink_Frequency(MHz)": 0,
+        "8_Uplink/Downlink_Bandwidth(kHz)": 0,
+        "8_Uplink/Downlink_Polarization": "",
+        "8_Uplink/Downlink_ERP(W)": 0,
+
+        "9_Uplink/Downlink_Name": "",
+        "9_Uplink/Downlink_Service": "",
+        "9_Uplink/Downlink_Status": "",
+        "9_Uplink/Downlink_Frequency(MHz)": 0,
+        "9_Uplink/Downlink_Bandwidth(kHz)": 0,
+        "9_Uplink/Downlink_Polarization": "",
+        "9_Uplink/Downlink_ERP(W)": 0,
+
+        "10_Uplink/Downlink_Name": "",
+        "10_Uplink/Downlink_Service": "",
+        "10_Uplink/Downlink_Status": "",
+        "10_Uplink/Downlink_Frequency(MHz)": 0,
+        "10_Uplink/Downlink_Bandwidth(kHz)": 0,
+        "10_Uplink/Downlink_Polarization": "",
+        "10_Uplink/Downlink_ERP(W)": 0
+    },
+    {
+        "Entry_ID": 6,
+        "NORAD_ID": 39444,
+        "COSPAR_ID": "2013-066AE",
+
+        "Satellite_Name": "AO-73",
+        "Satellite_alternative_Name": "AMSAT-OSCAR 73, FUNcube-1",
+        "Satellite_Image_URL": "https://amsat-uk.org/wp-content/uploads/2013/02/funcube-1-flight-model-image-credit-wouter-weggelaar-pa3weg.jpg?w=300",
+        "Satellite_Type": "Educational, Ameture radio",
+        "Satellite_Orbit_Type": "SSO LEO",
+        "Satellite_Orbit_Status": "In-Orbit",
+        "Satellite_Manufacturer": "AMSAT-UK, AMSAT-NL",
+        "Satellite_Operator": "AMSAT-UK",
+
+        "Satellite_Launch_Date": "21/09/2013",
+        "Satellite_Launch_Vehicle_Name": "Dnepr",
+        "Satellite_Launch_Image_URL": "-",
+        
+        "Satellite_Mission_Status": "Active",
+        "Satellite_Functionality_Status": "Operational",
+        
+        "Satellite_Notes": "",
+        "Satellite_Tracked": "Yes",
+        "Satellite_First_Observation_Date": "26/07/2025",
+
+        "0_Uplink/Downlink_Name": "",
+        "0_Uplink/Downlink_Service": "",
+        "0_Uplink/Downlink_Status": "",
+        "0_Uplink/Downlink_Frequency(MHz)": 0,
+        "0_Uplink/Downlink_Bandwidth(kHz)": 0,
+        "0_Uplink/Downlink_Polarization": "",
+        "0_Uplink/Downlink_ERP(W)": 0,
+
+        "1_Uplink/Downlink_Name": "",
+        "1_Uplink/Downlink_Service": "",
+        "1_Uplink/Downlink_Status": "",
+        "1_Uplink/Downlink_Frequency(MHz)": 0,
+        "1_Uplink/Downlink_Bandwidth(kHz)": 0,
+        "1_Uplink/Downlink_Polarization": "",
+        "1_Uplink/Downlink_ERP(W)": 0,
+
+        "2_Uplink/Downlink_Name": "",
+        "2_Uplink/Downlink_Service": "",
+        "2_Uplink/Downlink_Status": "",
+        "2_Uplink/Downlink_Frequency(MHz)": 0,
+        "2_Uplink/Downlink_Bandwidth(kHz)": 0,
+        "2_Uplink/Downlink_Polarization": "",
+        "2_Uplink/Downlink_ERP(W)": 0,
+
+        "3_Uplink/Downlink_Name": "",
+        "3_Uplink/Downlink_Service": "",
+        "3_Uplink/Downlink_Status": "",
+        "3_Uplink/Downlink_Frequency(MHz)": 0,
+        "3_Uplink/Downlink_Bandwidth(kHz)": 0,
+        "3_Uplink/Downlink_Polarization": "",
+        "3_Uplink/Downlink_ERP(W)": 0,
+
+        "4_Uplink/Downlink_Name": "",
+        "4_Uplink/Downlink_Service": "",
+        "4_Uplink/Downlink_Status": "",
+        "4_Uplink/Downlink_Frequency(MHz)": 0,
+        "4_Uplink/Downlink_Bandwidth(kHz)": 0,
+        "4_Uplink/Downlink_Polarization": "",
+        "4_Uplink/Downlink_ERP(W)": 0,
+
+        "5_Uplink/Downlink_Name": "",
+        "5_Uplink/Downlink_Service": "",
+        "5_Uplink/Downlink_Status": "",
+        "5_Uplink/Downlink_Frequency(MHz)": 0,
+        "5_Uplink/Downlink_Bandwidth(kHz)": 0,
+        "5_Uplink/Downlink_Polarization": "",
+        "5_Uplink/Downlink_ERP(W)": 0,
+
+        "6_Uplink/Downlink_Name": "",
+        "6_Uplink/Downlink_Service": "",
+        "6_Uplink/Downlink_Status": "",
+        "6_Uplink/Downlink_Frequency(MHz)": 0,
+        "6_Uplink/Downlink_Bandwidth(kHz)": 0,
+        "6_Uplink/Downlink_Polarization": "",
+        "6_Uplink/Downlink_ERP(W)": 0,
+
+        "7_Uplink/Downlink_Name": "",
+        "7_Uplink/Downlink_Service": "",
+        "7_Uplink/Downlink_Status": "",
+        "7_Uplink/Downlink_Frequency(MHz)": 0,
+        "7_Uplink/Downlink_Bandwidth(kHz)": 0,
+        "7_Uplink/Downlink_Polarization": "",
+        "7_Uplink/Downlink_ERP(W)": 0,
+
+        "8_Uplink/Downlink_Name": "",
+        "8_Uplink/Downlink_Service": "",
+        "8_Uplink/Downlink_Status": "",
+        "8_Uplink/Downlink_Frequency(MHz)": 0,
+        "8_Uplink/Downlink_Bandwidth(kHz)": 0,
+        "8_Uplink/Downlink_Polarization": "",
+        "8_Uplink/Downlink_ERP(W)": 0,
+
+        "9_Uplink/Downlink_Name": "",
+        "9_Uplink/Downlink_Service": "",
+        "9_Uplink/Downlink_Status": "",
+        "9_Uplink/Downlink_Frequency(MHz)": 0,
+        "9_Uplink/Downlink_Bandwidth(kHz)": 0,
+        "9_Uplink/Downlink_Polarization": "",
+        "9_Uplink/Downlink_ERP(W)": 0,
+
+        "10_Uplink/Downlink_Name": "",
+        "10_Uplink/Downlink_Service": "",
+        "10_Uplink/Downlink_Status": "",
+        "10_Uplink/Downlink_Frequency(MHz)": 0,
+        "10_Uplink/Downlink_Bandwidth(kHz)": 0,
+        "10_Uplink/Downlink_Polarization": "",
+        "10_Uplink/Downlink_ERP(W)": 0
+    },
+    {
+        "Entry_ID": 7,
+        "NORAD_ID": 61762,
+        "COSPAR_ID": "2024-199AD",
+
+        "Satellite_Name": "ArcticSat-1",
+        "Satellite_alternative_Name": "RS74S",
+        "Satellite_Image_URL": "https://www.nanosats.eu/img/sat/thumb4/thumbnail_ArcticSat-1_4.jpeg",
+        "Satellite_Type": "-",
+        "Satellite_Orbit_Type": "-",
+        "Satellite_Orbit_Status": "-",
+        "Satellite_Manufacturer": "-",
+        "Satellite_Operator": "-",
+
+        "Satellite_Launch_Date": "00/00/0000",
         "Satellite_Launch_Vehicle_Name": "-",
         "Satellite_Launch_Image_URL": "-",
         
         "Satellite_Mission_Status": "-",
         "Satellite_Functionality_Status": "-",
         
-        "Satellite_Notes": "Still transmits acording to the AMSAT-DL web page for AO-10",
+        "Satellite_Notes": "",
         "Satellite_Tracked": "-",
         "Satellite_First_Observation_Date": "00/00/0000",
 
@@ -565,52 +904,3 @@
         "10_Uplink/Downlink_ERP(W)": 0
     }
 ]
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
