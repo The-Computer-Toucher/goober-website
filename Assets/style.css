@@ -5,6 +5,9 @@ body { /* This is changes the 'body' so that it all text in the "<body> </body>"
     font-family: sans-serif;
     color: white;
     background-color: rgba(0, 0, 10, 0.95);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 div { /* This is used to make the error boxes as seen on the 404 page, also used for utility links */
@@ -30,25 +33,12 @@ h2 { /* Used for titles */
     font-size: 40px;
 }
 
-h3 { /* Used for sub titles */
-    color: rgba(0, 85, 150, 0.6);
-    text-align: left;
-    font-size: 20px;
-}
-
-h4 { /* Used for sub titles but in the center */
-    color: rgba(0, 85, 150, 0.6);
-    text-align: center;
-    font-size: 20px;
-}
-
-h5 { /* Used for quotes */
-    text-align: center;
-    font-size: 10px;
-}
-
 :any-link { /* changes the color of any links on the website */
     color: rgb(100, 175, 255);
+}
+
+.table_container {
+    min-height: 2000px;
 }
 
 header { /* Used to make the header banner */
@@ -67,6 +57,7 @@ footer { /* Used to make the footer banner */
     color: white;
     padding: 10px;
     font-size: 10px;
+    margin-top: auto;
 }
 
 table { /* Used to define the tables on any givin page */
@@ -118,6 +109,11 @@ tr:nth-child(even) { /* Defines the... I dont really know what this does, just t
 .table_img { /* Changes the size of a picture */
     width: auto;
     height: 80px;
+    object-fit: cover;
+}
+
+.card {
+    min-height: 80px;
 }
 
 .small_icon { /* Changes the size of a picture */
@@ -132,7 +128,6 @@ video {
     margin-left: auto;
     margin-right: auto;
 }
-
 
 
 /* Yes or no questions (also as or 'Planning')*/
