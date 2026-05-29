@@ -19,29 +19,67 @@ function displayData(data) {
     for (let sat of data) {
         out += ` 
         <tr>
-            <td>${sat.Entry_ID}</td>
-            <td>${sat.NORAD_ID}</td>
-            <td>${sat.COSPAR_ID}</td>
+            <td>
+            ${sat.Entry_ID}
+            </td>
+            <td>
+            ${sat.NORAD_ID}
+            </td>
+            <td>
+            ${sat.COSPAR_ID}
+            </td>
 
-            <td>${sat.Satellite_Name}</td>
-            <td>${sat.Satellite_alternative_Name}</td>
-            <td> <img class="table_img" src="${sat.Satellite_Image_URL}"> </td>
-            <td>${sat.Satellite_Type}</td>
-            <td>${sat.Satellite_Orbit_Type}</td>
-            <td class="${sat.Satellite_Orbit_Status}">${sat.Satellite_Orbit_Status}</td>
-            <td>${sat.Satellite_Manufacturer}</td>
-            <td>${sat.Satellite_Operator}</td>
+            <td>
+            ${sat.Satellite_Name}
+            </td>
+            <td>
+            ${sat.Satellite_alternative_Name}
+            </td>
+            <td> 
+            <img class="table_img" src="${sat.Satellite_Image_URL}" alt="Image of ${sat.Satellite_Name}"> 
+            </td>
+            <td>
+            ${sat.Satellite_Type}
+            </td>
+            <td>
+            ${sat.Satellite_Orbit_Type}
+            </td>
+            <td class="${sat.Satellite_Orbit_Status}">
+            ${sat.Satellite_Orbit_Status}
+            </td>
+            <td>
+            ${sat.Satellite_Manufacturer}
+            </td>
+            <td>
+            ${sat.Satellite_Operator}
+            </td>
 
-            <td>${sat.Satellite_Launch_Date}</td>
-            <td>${sat.Satellite_Launch_Vehicle_Name}</td>
-            <td> <img class="table_img" src="${sat.Satellite_Launch_Image_URL}"> </td>
+            <td>
+            ${sat.Satellite_Launch_Date}
+            </td>
+            <td>
+            ${sat.Satellite_Launch_Vehicle_Name}
+            </td>
+            <td> 
+            <img class="table_img" src="${sat.Satellite_Launch_Image_URL}" alt="${sat.Satellite_Launch_Vehicle_Name} with ${sat.Satellite_Name}"> 
+            </td>
 
-            <td class="${sat.Satellite_Mission_Status}">${sat.Satellite_Mission_Status}</td>
-            <td class="${sat.Satellite_Functionality_Status}">${sat.Satellite_Functionality_Status}</td>
+            <td class="${sat.Satellite_Mission_Status}">
+            ${sat.Satellite_Mission_Status}
+            </td>
+            <td class="${sat.Satellite_Functionality_Status}">
+            ${sat.Satellite_Functionality_Status}
+            </td>
 
-            <td>${sat.Satellite_Notes}</td>
-            <td class="${sat.Satellite_Tracked}">${sat.Satellite_Tracked}</td>
-            <td>${sat.Satellite_First_Observation_Date}</td>
+            <td>
+            ${sat.Satellite_Notes}
+            </td>
+            <td class="${sat.Satellite_Tracked}">
+            ${sat.Satellite_Tracked}
+            </td>
+            <td>
+            ${sat.Satellite_First_Observation_Date}
+            </td>
         </tr>
         `; // this html for those who are wondering
     }
