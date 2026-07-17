@@ -1,47 +1,28 @@
 <!-- Any comments are subject to spelling errors -->
 <!DOCTYPE html>
-<html lang="en">
-  <head> <!-- defines some meta data -->
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Goober-site</title> <!-- the website title (on the tab) -->
-    <link rel="stylesheet" href="Assets/style.css"> <!-- tells the html to pull the styles from the 'style.css' file -->
-    <!-- <script src="Scripts/Test.js"></script> -->
-    <script src="Scripts/Popup.js"></script>
+<html lang="en" data-bs-theme="dark">
+  <head> <!--! HEADER -->
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="description" content="Goober-site is a website for all things sateillite related. With a sateillite database containing all spacecraft tracked and or are related to the spacecraft being tracked, and their associated data. As well as infomation on HF radio stations.">
+    <title>Goober-site</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous"> <!--* bootstrap css -->
+    <link rel="stylesheet" href="Assets/style.css"> <!--* custom styling for tables in the databases -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script> <!--* this script is need for bootstrap-->
+    <script src="Scripts/Template.js"></script> <!--* this script loads the navbar and footer for the pages -->
   </head>
-  <body> <!-- defines evety thing you see on the page -->
-    <header> <p> . </p> </header> <!-- defines the banner at the top of the page -->
-    <h2> The Goober website </h2> <!-- the website title -->
-    <h5> <i> One year of tracking </i> </h5>
-    <h1> STILL UNDER DEVELOPMENT </h1> <!-- very stil under development -->
-    <p> </p>
-      <table> <!-- defines the project table -->
-        <h3>  </h3> <!-- subtitle -->
-        <tr> <!-- defines the headings at the top of each collem -->
-          <th> Name </th>
-          <th> Description </th>
-        </tr>
-        <tr>
-          <td> <a href="Satdb.html">SAT DB</a> </td>
-          <td> </td>
-        </tr>
-        <tr>
-          <td> <a href="Hardware-Software.html">Hardware and Software</a> </td>
-          <td> </td>
-        </tr>
-      </table>
-      <!-- <h3> Self Biography </h3> --> <!-- sub title -->
-      <p> </p> <!-- paragraph -->
-    <footer> <!-- defines the footers info and links-->
-      <p> &copy; 2025-2026 Goober-site. This software is licensed under the MIT License. </p> 
-      <p> 
-        Report any issues to the <a href="https://github.com/Goober-site/goober-website" aria-label="GitHub"> GitHub</a> page. 
-        Hosted using <a href="https://pages.github.com/">GitHub Pages</a> <img class="small_icon" src="Assets/github-mark-c791e9551fe4/github-mark/github-mark-white.png" alt="GitHub logo">. 
-      </p> 
-      <p> 
-        Disclaimer: Github does not encourage any content on this website, GitHub is only hosting this website and its files. 
-        (I'm also using the GitHub Icons located <a href="https://github.com/logos" aria-label="here">here</a>.)
-      </p>
-    </footer> 
+  <body class="d-flex flex-column min-vh-100"> <!--! BODY -->
+
+    <nav-bar></nav-bar> <!-- loaded for Template.js -->
+
+    <main class="flex-grow-1 mx-3 p-2 text-light"> <!--! main page content -->
+      <article>
+        <h1 class="mx-auto p-2" style="width: 200px;">Welcome</h1>
+        <p></p>
+      </article>  
+    </main>
+
+    <site-footer></site-footer> <!-- loaded for Template.js -->
+
   </body>
 </html>
