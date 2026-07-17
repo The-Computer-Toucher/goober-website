@@ -1,135 +1,3 @@
-/* Any comments are subject to spelling errors */
-
-body { /* This is changes the 'body' so that it all text in the "<body> </body>" has the same font and is black */
-    text-align: left;
-    font-family: sans-serif;
-    color: white;
-    background-color: rgba(0, 0, 10, 0.95);
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-}
-
-div { /* This is used to make the error boxes as seen on the 404 page, also used for utility links */
-    text-align: center;
-    font-family: sans-serif;
-    color: white;
-    width: auto;
-    border: 2px solid rgb(19, 85, 146);
-    margin: auto;
-    height: auto;
-    background-color: rgba(0, 75, 75, 1);
-}
-
-h1 { /* Used for error mesages as shown on the 404 page, and its also used for the 'STILL UNDER DEVELOPMENT' text */
-    color:darkred;
-    text-align: center;
-    font-size: 40px;
-}
-
-h2 { /* Used for titles */
-    color: rgba(0, 85, 150, 0.6);
-    text-align: center;
-    font-size: 40px;
-}
-
-:any-link { /* changes the color of any links on the website */
-    color: rgb(100, 175, 255);
-}
-
-.table_container {
-    min-height: 2000px;
-}
-
-header { /* Used to make the header banner */
-    background-color: rgba(0, 85, 150, 0.6);
-    text-align: center;
-    font-family: sans-serif;
-    color: white;
-    height: 20px;
-    padding: 1px;
-}
-
-footer { /* Used to make the footer banner */
-    background-color: rgba(0, 85, 150, 0.6);
-    text-align: center;
-    font-family: sans-serif;
-    color: white;
-    padding: 10px;
-    font-size: 10px;
-    margin-top: auto;
-}
-
-table { /* Used to define the tables on any givin page */
-  font-family: sans-serif;
-  border-collapse: collapse;
-  width: 100%;
-  /* font-size: 12px; */
-}
-
-.Key_table { /* Used to define the tables on any givin page */
-  font-family: sans-serif;
-  border-collapse: collapse;
-  width: 20%;
-  /* font-size: 12px; */
-}
-
-td { /* Table data (the text or images or any thing that goes in the table) */
-  border: 1px solid white;
-  text-align: center;
-  margin: 2px;
-  padding: 5px;
-}
-
-th { /* Table headings (the headings at the top of each collum) */
-  border: 1px solid white;
-  text-align: center;
-  margin: 2px;
-  padding: 5px;
-  background: rgba(0, 0, 100, 0.5);
-  color:gray;
-}
-
-.search_box { /* Used to define the tables on any givin page */
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 12%;
-  padding: 8px;
-  margin-bottom: 10px;
-  font-family: sans-serif;
-  text-align: center;
-  /* font-size: 12px; */
-}
-
-tr:nth-child(even) { /* Defines the... I dont really know what this does, just that its somthing to do with the tables */
-  background-color: rgba(0, 0, 10, 0.9);
-}
-
-.table_img { /* Changes the size of a picture */
-    width: auto;
-    height: 80px;
-    object-fit: cover;
-}
-
-.card {
-    min-height: 80px;
-}
-
-.small_icon { /* Changes the size of a picture */
-    width: 12px;
-    height: 12px;
-}
-
-video {
-    display: block;
-    width: auto;
-    height: 600px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-
 /* Yes or no questions (also as or 'Planning')*/
 .Yes { /* Defines the color that indicates 'Yes' on a table */
     background-color: rgba(50, 150, 50, 0.6);
@@ -146,7 +14,6 @@ video {
 .Planning { /* Defines the color that indicates that im 'Planning' on doing some thing, on a table */
     background-color: rgba(50, 50, 150, 0.6);
 } 
-
 
 
 /* The 'Orbital_Status' */
@@ -206,7 +73,6 @@ video {
 }
 
 
-
 /* The status of the satellites */
 .Active { /* Defines the color of the table to show if something is 'Active' */
     background-color: rgba(50, 150, 50, 0.6);
@@ -240,4 +106,3 @@ video {
 .Defunct { /* Defines the colors of the table to show if something is 'Defunct' */
     background-color: rgba(100, 100, 100, 0.6);
 }
-
