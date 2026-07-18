@@ -3,7 +3,7 @@ class NavBar extends HTMLElement {
         this.innerHTML= `
             <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top"> <!--! NAVBAR -->
             <div class="container-fluid">
-                <a class="navbar-brand" href="#">Goober-site</a>
+                <a class="navbar-brand" href="Index.html">Goober-site</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
                 </button>
@@ -28,7 +28,8 @@ class NavBar extends HTMLElement {
                         <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">Software</a> <!--? this is for the software used and made for satellite tracking -->
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">3rd party software</a></li>
+                            <li><a class="dropdown-item" href="Firstpartysoftware.html">First party software</a></li>
+                            <li><a class="dropdown-item" href="Thirdpartysoftware.html">Third party software</a></li>
                         </ul>
                         </li>
                         <li class="nav-item">
