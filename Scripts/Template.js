@@ -53,7 +53,6 @@ class SiteFooter extends HTMLElement {
                     <li class="nav-item"><a href="Index.html" class="nav-link px-2 text-body-secondary">Home</a></li> 
                     <li class="nav-item"><a href="https://github.com/Goober-site/goober-website" class="nav-link px-2 text-body-secondary">Report issues</a></li> 
                     <li class="nav-item"><a href="https://pages.github.com/" class="nav-link px-2 text-body-secondary">GitHub Pages</a></li> 
-                    <li class="nav-item"><a href="https://github.com/logos" class="nav-link px-2 text-body-secondary">GitHub icons</a></li> 
                     <li class="nav-item"><a href="https://getbootstrap.com/" class="nav-link px-2 text-body-secondary">Bootstrap</a></li> 
                     <li class="nav-item"><a href="About.html" class="nav-link px-2 text-body-secondary">About</a></li> 
                 </ul> 
