@@ -12,12 +12,8 @@ class NavBar extends HTMLElement {
                         <li class="nav-item">
                         <a class="nav-link" aria-current="page" href="Index.html">Home</a>
                         </li>
-                        <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">Sateillite info</a> <!--? satellite things like the db and recived data, and specific pages for certin satellites like NOAA-15/18/19 etc -->
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="Satdb.html">Satellite database</a></li>
-                            <li><a class="dropdown-item" href="#">HF database </a></li>
-                        </ul>
+                        <li class="nav-item">
+                        <a class="nav-link" href="Satdb.html">Satellite database</a>
                         </li>
                         <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">Research and investigation</a> <!--? this is where all the things like research for satellites and papers written about them -->
