@@ -13,7 +13,7 @@ class NavBar extends HTMLElement {
                         <a class="nav-link" aria-current="page" href="Index.html">Home</a>
                         </li>
                         <li class="nav-item">
-                        <a class="nav-link" href="Satdb.html">Satellite database</a>
+                        <a class="nav-link" href="Redirect.html">Satellite database</a>
                         </li>
                         <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">Research and investigation</a> <!--? this is where all the things like research for satellites and papers written about them -->
